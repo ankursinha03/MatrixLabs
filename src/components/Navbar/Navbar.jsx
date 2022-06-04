@@ -115,7 +115,6 @@ const Navbar = (props) => {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
                   mx: 1,
@@ -129,7 +128,6 @@ const Navbar = (props) => {
               </Button>
             ))}
             <Button
-              onClick={handleCloseNavMenu}
               sx={{
                 my: 2.5,
                 mx: 1,

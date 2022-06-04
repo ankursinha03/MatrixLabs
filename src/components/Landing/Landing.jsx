@@ -1,16 +1,137 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 import Navbar from "../Navbar/Navbar";
+import Button from "@mui/material/Button";
+import earth from "../../assets/earth.png";
 import styles from "./Landing.module.css";
 
 const Landing = () => {
   return (
     <div className={styles.landing}>
       <Navbar />
-      <Container maxWidth="xl">
-        <Box></Box>
-        <Box></Box>
+      <Container
+        maxWidth="xl"
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: { xs: "center", md: "space-between" },
+          mt: { xs: "4rem", md: 2 },
+        }}
+      >
+        <Box
+          sx={{
+            height: "auto",
+            width: "100%",
+            maxWidth: { xs: "60%", md: "40%" },
+            mx: "auto",
+          }}
+        >
+          <Box
+            sx={{
+              textAlign: "left",
+              color: "white",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              height: "100%",
+              width: "100%",
+              px: { xs: "1rem", sm: "3rem" },
+            }}
+          >
+            <Typography
+              variant="p"
+              sx={{
+                fontWeight: 700,
+                borderLeft: "3px solid #00d186",
+                px: 2.5,
+              }}
+            >
+              THE MATRIX LABS
+            </Typography>
+            <Typography
+              variant="h4"
+              sx={{
+                fontWeight: 700,
+                mt: 2,
+              }}
+            >
+              WE CREATE
+            </Typography>
+            <Typography
+              variant="h4"
+              sx={{
+                fontWeight: 700,
+                color: "#00d186",
+                mt: 1,
+              }}
+            >
+              CUSTOM CONTRACT
+            </Typography>
+            <Typography
+              variant="p"
+              sx={{
+                fontWeight: 500,
+                mt: 2,
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </Typography>
+            <Box
+              sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "space-between",
+                mt: 2,
+              }}
+            >
+              <Button
+                sx={{
+                  my: 2.5,
+                  mr: 1,
+                  backgroundColor: "transparent",
+                  border: "2px solid #00D186",
+                  color: "white",
+                  fontWeight: 600,
+                  display: "block",
+                  fontSize: "1rem",
+                  width: "100%",
+                  padding: "2px 1rem",
+                }}
+              >
+                KNOW MORE
+              </Button>
+              <Button
+                sx={{
+                  my: 2.5,
+                  ml: 1,
+                  backgroundColor: "#00D186",
+                  color: "black",
+                  display: "block",
+                  fontSize: "1rem",
+                  fontWeight: 600,
+                  width: "100%",
+                  padding: "2px 1rem",
+                }}
+              >
+                DAPP
+              </Button>
+            </Box>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            height: "auto",
+            width: "100%",
+            maxWidth: { xs: "100%", md: "50%" },
+            mx: "auto",
+          }}
+          component="img"
+          alt="Earth"
+          src={earth}
+        ></Box>
       </Container>
     </div>
   );
