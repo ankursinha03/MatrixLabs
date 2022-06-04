@@ -1,0 +1,7 @@
+.landing {
+  background: #000000;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url("../../assets/background-lines.png");
+}
