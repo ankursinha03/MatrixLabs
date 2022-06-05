@@ -1,3 +1,13 @@
 .App {
   background-color: black;
 }
+
+.circleBg {
+  background-image: url("/src/assets/background-circle-design.png");
+  background-size: 100%;
+}
+
+.greyMountainWrapper {
+  background-image: url("/src/assets/grey-mountains.png");
+  background-size: cover;
+}

@@ -9,10 +9,14 @@ function App() {
   return (
     <div className={styles.App}>
       <Landing />
-      <WhyUs />
-      <ServicesProvided />
-      <Team />
-      <Footer />
+      <div className={styles.circleBg}>
+        <div className={styles.greyMountainWrapper}>
+          <WhyUs />
+        </div>
+        <ServicesProvided />
+        <Team />
+        <Footer />
+      </div>
     </div>
   );
 }

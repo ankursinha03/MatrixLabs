@@ -22,86 +22,84 @@ const WhyUs = () => {
         my: 5,
       }}
     >
-      <div className={styles.WhyUsBgWrapper}>
+      <Box
+        sx={{
+          width: "100%",
+          height: "auto",
+          my: 3,
+          mx: 2,
+          color: "white",
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            fontFamily: "Montserrat",
+            fontWeight: 700,
+          }}
+        >
+          WHY CHOOSE
+        </Typography>
+        <Typography
+          variant="h3"
+          className={styles.borderText}
+          sx={{
+            fontFamily: "Montserrat",
+            fontWeight: 700,
+            color: "transparent",
+          }}
+        >
+          MATRIX LABS
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: { xs: "center", md: "space-between" },
+          mt: { xs: "4rem", md: 2 },
+        }}
+      >
         <Box
           sx={{
-            width: "100%",
             height: "auto",
-            my: 3,
-            mx: 2,
-            color: "white",
+            width: "100%",
+            maxWidth: { xs: "100%", md: "500px" },
+            mx: "auto",
           }}
-        >
-          <Typography
-            variant="h4"
-            sx={{
-              fontFamily: "Montserrat",
-              fontWeight: 700,
-            }}
-          >
-            WHY CHOOSE
-          </Typography>
-          <Typography
-            variant="h3"
-            className={styles.borderText}
-            sx={{
-              fontFamily: "Montserrat",
-              fontWeight: 700,
-              color: "transparent",
-            }}
-          >
-            MATRIX LABS
-          </Typography>
-        </Box>
+          component="img"
+          alt="Earth"
+          src={blockchain}
+        ></Box>
         <Box
           sx={{
+            height: "auto",
+            width: "100%",
+            maxWidth: { xs: "60%", md: "40%" },
+            mx: "auto",
             display: "flex",
-            flexDirection: { xs: "column", md: "row" },
-            justifyContent: { xs: "center", md: "space-between" },
-            mt: { xs: "4rem", md: 2 },
+            flexDirection: "column",
+            justifyContent: "center",
           }}
         >
-          <Box
+          <Typography
+            variant="h6"
             sx={{
-              height: "auto",
-              width: "100%",
-              maxWidth: { xs: "100%", md: "500px" },
-              mx: "auto",
-            }}
-            component="img"
-            alt="Earth"
-            src={blockchain}
-          ></Box>
-          <Box
-            sx={{
-              height: "auto",
-              width: "100%",
-              maxWidth: { xs: "60%", md: "40%" },
-              mx: "auto",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
+              color: "white",
+              fontFamily: "Poppins",
+              fontWeight: 500,
             }}
           >
-            <Typography
-              variant="h6"
-              sx={{
-                color: "white",
-                fontFamily: "Poppins",
-                fontWeight: 500,
-              }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </Box>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Typography>
         </Box>
-      </div>
+      </Box>
       <Box
         sx={{
           display: "flex",
