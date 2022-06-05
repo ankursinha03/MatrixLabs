@@ -119,6 +119,7 @@ const Footer = () => {
                 {footerColumn1Headers.map((header) => {
                   return (
                     <Typography
+                      key={header}
                       variant="p"
                       sx={{
                         mt: 3,
@@ -138,6 +139,7 @@ const Footer = () => {
                 {footerColumn2Headers.map((header) => {
                   return (
                     <Typography
+                      key={header}
                       variant="p"
                       sx={{
                         mt: 3,
