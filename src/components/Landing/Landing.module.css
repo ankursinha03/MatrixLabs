@@ -5,3 +5,9 @@
   overflow-x: hidden;
   background-image: url("../../assets/background-lines.png");
 }
+
+@media screen and (max-width: 900px) {
+  .landing {
+    height: 100%;
+  }
+}

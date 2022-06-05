@@ -1,0 +1,12 @@
+.footer {
+  background-color: #000000;
+  height: 60vh;
+  overflow-x: hidden;
+  background-image: url("../../assets/blue-mountains.png");
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 100%;
+  }
+}
