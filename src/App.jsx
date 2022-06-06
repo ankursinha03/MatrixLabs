@@ -15,7 +15,9 @@ function App() {
           <WhyUs />
         </div>
         <ServicesProvided />
-        <ProjectsDone />
+        <div className={styles.greyMountainWrapper}>
+          <ProjectsDone />
+        </div>
         <Team />
         <Footer />
       </div>
