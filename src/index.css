@@ -8,6 +8,11 @@ body,
   overflow-x: hidden;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #00d186 #2b2b2b;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto",
@@ -15,4 +20,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #00d186;
+  border-radius: 3px;
 }
