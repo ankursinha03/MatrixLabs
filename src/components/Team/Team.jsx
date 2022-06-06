@@ -167,6 +167,9 @@ const Team = () => {
                     borderRadius: "7px",
                     fontSize: "0.7rem",
                     p: "0.6rem 1.1rem",
+                    "&:hover": {
+                      backgroundColor: "#00D186",
+                    },
                   }}
                 >
                   Connect

@@ -114,6 +114,9 @@ const Landing = () => {
                   fontWeight: 600,
                   width: "100%",
                   padding: "2px 1rem",
+                  "&:hover": {
+                    backgroundColor: "#00D186",
+                  },
                 }}
               >
                 DAPP

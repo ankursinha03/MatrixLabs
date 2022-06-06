@@ -137,6 +137,9 @@ const Navbar = (props) => {
                 display: "block",
                 fontSize: "1rem",
                 padding: "0px 1rem",
+                "&:hover": {
+                  backgroundColor: "#00D186",
+                },
               }}
             >
               DAPP
