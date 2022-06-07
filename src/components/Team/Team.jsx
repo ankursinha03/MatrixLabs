@@ -82,7 +82,7 @@ const Team = () => {
               sx={{
                 width: "100%",
                 height: "100%",
-                maxWidth: "250px",
+                maxWidth: {xs:"90%", sm:"250px"},
                 maxHeight: "250px",
                 textAlign: "center",
                 my: 3,

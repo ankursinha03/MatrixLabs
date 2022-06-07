@@ -56,7 +56,7 @@ const Landing = () => {
               sx={{
                 fontWeight: 700,
                 borderLeft: "3px solid #00d186",
-                px: 2.5,
+                px: 1.5,
                 fontSize: { xs: "0.9rem", sm: "1.1rem" },
               }}
             >

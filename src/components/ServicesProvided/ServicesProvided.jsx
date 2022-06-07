@@ -73,6 +73,7 @@ const ServicesProvided = () => {
           justifyContent: { xs: "center", md: "evenly" },
           mt: { xs: "4rem", md: 2 },
           width: "100%",
+
         }}
       >
         {cardData.map((card) => {
@@ -81,8 +82,8 @@ const ServicesProvided = () => {
               key={card.header}
               sx={{
                 height: "auto",
-                width: "100%",
-                maxWidth: { xs: "500px", sm: "80%", md: "max( 40% , 475px)" },
+                width: "100%", 
+                maxWidth: { xs: "90%", sm: "80%", md: "max( 40% , 475px)" },
                 mx: { xs: "auto", md: 3 },
                 display: "flex",
                 flexDirection: "row",

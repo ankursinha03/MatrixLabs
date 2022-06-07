@@ -123,7 +123,7 @@ const WhyUs = () => {
               sx={{
                 width: "100%",
                 height: "100%",
-                maxWidth: "200px",
+                maxWidth: {xs:"200px", sm:"350px"},
                 maxHeight: "250px",
                 textAlign: "center",
                 mx: "auto",

@@ -141,7 +141,7 @@ const ProjectsDone = () => {
               sx={{
                 height: "auto",
                 width: "100%",
-                maxWidth: { xs: "500px", sm: "80%", md: "max( 40% , 475px)" },
+                maxWidth: { xs: "90%", sm: "80%", md: "max( 40% , 475px)" },
                 mx: { xs: "auto", md: 3 },
                 display: "flex",
                 flexDirection: "column",
