@@ -17,15 +17,15 @@ const Footer = () => {
         sx={{
           display: "flex",
           justifyContent: { xs: "center", sm: "space-between" },
-          flexDirection: { xs: "column-reverse", sm: "row" },
+          flexDirection: { xs: "column", sm: "row" },
           mt: "5rem",
         }}
       >
         <Box
           sx={{
             height: "100%",
-            width: "100%",
-            maxWidth: { xs: "50%", md: "40%" },
+            width: { xs: "90%", sm: "100%" },
+            maxWidth: { xs: "400px", md: "40%" },
             color: "white",
             px: { xs: "1rem", sm: "3rem" },
           }}
@@ -82,14 +82,17 @@ const Footer = () => {
             <Twitter sx={{ ml: 2 }} />
           </Box>
         </Box>
+        <Box flexGrow={1} />
         <Box
           sx={{
             height: "100%",
-            width: "100%",
-            maxWidth: { xs: "50%", md: "50%" },
+            width: { xs: "90%", sm: "100%" },
+            maxWidth: { xs: "400px", md: "40%" },
+            px: { xs: "2rem", sm: "3rem" },
+            mb: { xs: "2rem", sm: "none" },
             color: "white",
             display: "flex",
-            justifyContent: "center",
+            justifyContent: { xs: "flex-start", sm: "center" },
             alignItems: "center",
           }}
         >
@@ -110,6 +113,7 @@ const Footer = () => {
               sx={{
                 display: "flex",
                 flexDirection: "row",
+                gap: "1rem",
               }}
             >
               <Box
