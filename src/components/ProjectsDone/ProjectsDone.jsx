@@ -53,6 +53,7 @@ const ProjectsDone = () => {
           variant="h4"
           sx={{
             fontFamily: "Montserrat",
+            fontSize: { xs: "1.8rem", sm: "2.2rem" },
             fontWeight: 700,
           }}
         >
@@ -64,6 +65,7 @@ const ProjectsDone = () => {
           sx={{
             fontFamily: "Montserrat",
             fontWeight: 700,
+            fontSize: { xs: "2.5rem", sm: "3rem" },
             color: "transparent",
           }}
         >
@@ -84,23 +86,27 @@ const ProjectsDone = () => {
             display: "flex",
             flexDirection: "row",
             flexWrap: "nowrap",
+            gap: 2,
             borderRadius: "10px",
             p: { xs: "auto", sm: "3px" },
+            overflowX: "auto",
           }}
         >
           {navData.map((item) => {
             return (
               <Button
                 sx={{
-                  m: 1,
+                  my: 1,
                   backgroundColor:
                     activeNav === item ? "#00D186" : "transparent",
                   color: "white",
                   fontFamily: "Montserrat",
                   fontWeight: 600,
                   display: "block",
-                  fontSize: "1rem",
+                  fontSize: { xs: "0.9rem", sm: "1rem" },
                   padding: "0px 0.5rem",
+                  width: "fit-content",
+                  flexShrink: 0,
                   borderRadius: "10px",
                   "&:hover": {
                     backgroundColor:
@@ -163,8 +169,8 @@ const ProjectsDone = () => {
                     src={metamarketing}
                     alt="icon"
                     sx={{
-                      height: "30px",
-                      width: "55px",
+                      height: { xs: "25px", sm: "30px" },
+                      width: { xs: "42px", sm: "55px" },
                     }}
                   />
                   <Typography
@@ -172,7 +178,7 @@ const ProjectsDone = () => {
                     sx={{
                       fontFamily: "Montserrat",
                       fontWeight: 600,
-                      fontSize: "1.3rem",
+                      fontSize: { xs: "1.1rem", sm: "1.3rem" },
                       color: "white",
                     }}
                   >
@@ -184,8 +190,8 @@ const ProjectsDone = () => {
                     src={paperPlane}
                     alt="paper plane"
                     sx={{
-                      height: "27px",
-                      width: "27px",
+                      height: { xs: "23px", sm: "27px" },
+                      width: { xs: "23px", sm: "27px" },
                       mx: 0.5,
                     }}
                   />
@@ -194,8 +200,8 @@ const ProjectsDone = () => {
                     src={globe}
                     alt="globe"
                     sx={{
-                      height: "27px",
-                      width: "27px",
+                      height: { xs: "23px", sm: "27px" },
+                      width: { xs: "23px", sm: "27px" },
                       mx: 0.5,
                     }}
                   />
@@ -206,7 +212,7 @@ const ProjectsDone = () => {
                     fontFamily: "Poppins",
                     fontWeight: 500,
                     color: "#c2c2c2",
-                    fontSize: "0.95rem",
+                    fontSize: { xs: "0.8rem", sm: "0.95rem" },
                     ml: "8px",
                     mt: 1,
                   }}

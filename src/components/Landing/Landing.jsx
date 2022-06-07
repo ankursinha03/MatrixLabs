@@ -24,7 +24,7 @@ const Landing = () => {
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "60%", md: "40%" },
+            maxWidth: { xs: "90%", md: "40%" },
             mx: "auto",
           }}
         >
@@ -46,7 +46,7 @@ const Landing = () => {
                 fontWeight: 700,
                 borderLeft: "3px solid #00d186",
                 px: 2.5,
-                fontSize: { xs: "0.8rem", sm: "1.1rem" },
+                fontSize: { xs: "0.9rem", sm: "1.1rem" },
               }}
             >
               THE MATRIX LABS
@@ -55,6 +55,7 @@ const Landing = () => {
               variant="h3"
               sx={{
                 fontWeight: 700,
+                fontSize: { xs: "2rem", sm: "3rem" },
                 mt: 2,
               }}
             >
@@ -64,6 +65,7 @@ const Landing = () => {
               variant="h3"
               sx={{
                 fontWeight: 700,
+                fontSize: { xs: "2rem", sm: "3rem" },
                 color: "#00d186",
                 mt: 1,
               }}
@@ -75,7 +77,7 @@ const Landing = () => {
               sx={{
                 fontWeight: 500,
                 mt: 2,
-                fontSize: { xs: "0.9rem", md: "1.1rem" },
+                fontSize: { xs: "0.9rem", sm: "1.1rem" },
               }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -98,9 +100,9 @@ const Landing = () => {
                   color: "white",
                   fontWeight: 600,
                   display: "block",
-                  fontSize: "1.1rem",
+                  fontSize: { xs: "0.9rem", sm: "1.1rem" },
                   width: "100%",
-                  padding: "3px 1rem",
+                  padding: { xs: "1px 0.5rem", sm: "3px 1rem" },
                 }}
               >
                 KNOW MORE
@@ -112,10 +114,10 @@ const Landing = () => {
                   backgroundColor: "#00D186",
                   color: "black",
                   display: "block",
-                  fontSize: "1.1rem",
+                  fontSize: { xs: "0.9rem", sm: "1.1rem" },
                   fontWeight: 600,
                   width: "100%",
-                  padding: "3px 1rem",
+                  padding: { xs: "1px 0.5rem", sm: "3px 1rem" },
                   "&:hover": {
                     backgroundColor: "#00D186",
                   },

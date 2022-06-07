@@ -45,6 +45,7 @@ const ServicesProvided = () => {
           variant="h4"
           sx={{
             fontFamily: "Montserrat",
+            fontSize: { xs: "1.8rem", sm: "2.2rem" },
             fontWeight: 700,
           }}
         >
@@ -56,6 +57,7 @@ const ServicesProvided = () => {
           sx={{
             fontFamily: "Montserrat",
             fontWeight: 700,
+            fontSize: { xs: "2.5rem", sm: "3rem" },
             color: "transparent",
           }}
         >
@@ -113,6 +115,7 @@ const ServicesProvided = () => {
                   sx={{
                     fontFamily: "Montserrat",
                     fontWeight: 700,
+                    fontSize: { xs: "1rem", sm: "1.4rem" },
                     color: "#0ed8a7",
                   }}
                 >
@@ -123,6 +126,7 @@ const ServicesProvided = () => {
                   sx={{
                     fontFamily: "Poppins",
                     fontWeight: 500,
+                    fontSize: { xs: "0.9rem", sm: "1.3rem" },
                     color: "white",
                   }}
                 >

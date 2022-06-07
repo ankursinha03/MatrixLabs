@@ -36,6 +36,7 @@ const WhyUs = () => {
           variant="h4"
           sx={{
             fontFamily: "Montserrat",
+            fontSize: { xs: "1.8rem", sm: "2.2rem" },
             fontWeight: 700,
           }}
         >
@@ -47,6 +48,7 @@ const WhyUs = () => {
           sx={{
             fontFamily: "Montserrat",
             fontWeight: 700,
+            fontSize: { xs: "2.5rem", sm: "3rem" },
             color: "transparent",
           }}
         >
@@ -76,11 +78,12 @@ const WhyUs = () => {
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "60%", md: "43%" },
+            maxWidth: { xs: "85%", md: "43%" },
             mx: "auto",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            mt: { xs: "2rem", md: 0 },
           }}
         >
           <Typography
@@ -88,6 +91,7 @@ const WhyUs = () => {
             sx={{
               color: "white",
               fontFamily: "Poppins",
+              fontSize: { xs: "1.1rem", sm: "1.3rem" },
               fontWeight: 500,
             }}
           >

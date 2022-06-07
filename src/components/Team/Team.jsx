@@ -42,6 +42,7 @@ const Team = () => {
           variant="h4"
           sx={{
             fontFamily: "Montserrat",
+            fontSize: { xs: "1.8rem", sm: "2.2rem" },
             fontWeight: 700,
           }}
         >
@@ -53,6 +54,7 @@ const Team = () => {
           sx={{
             fontFamily: "Montserrat",
             fontWeight: 700,
+            fontSize: { xs: "2.5rem", sm: "3rem" },
             color: "transparent",
           }}
         >
@@ -64,6 +66,7 @@ const Team = () => {
           display: "flex",
           justifyContent: { xs: "center", sm: "flex-start" },
           flexDirection: { xs: "column", sm: "row" },
+          alignItems: "center",
           gap: { xs: 0, sm: "5rem" },
           flexWrap: "wrap",
           width: "100%",

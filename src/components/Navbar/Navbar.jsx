@@ -11,9 +11,9 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "../../assets/logo.png";
 
-const pages = ["About", "Services", "Projects", "Contact"];
+const pages = ["ABOUT", "SERVICES", "PROJECTS", "CONTACT"];
 
-const Navbar = (props) => {
+const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -78,6 +78,7 @@ const Navbar = (props) => {
                 style: {
                   width: "100%",
                   maxWidth: "100%",
+                  background: "#000000",
                 },
               }}
               marginThreshold={0}
@@ -99,11 +100,15 @@ const Navbar = (props) => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography sx={{ color: "white" }} textAlign="center">
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">DAPP</Typography>
+                <Typography sx={{ color: "white" }} textAlign="center">
+                  DAPP
+                </Typography>
               </MenuItem>
             </Menu>
           </Box>
