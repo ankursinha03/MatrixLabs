@@ -33,7 +33,8 @@ const Team = () => {
           width: "100%",
           height: "auto",
           my: 3,
-          mx: 2,
+          mx: 3,
+          px: { xs: "0rem", sm: "3rem" },
           color: "white",
         }}
       >
@@ -61,11 +62,13 @@ const Team = () => {
       <Box
         sx={{
           display: "flex",
-          justifyContent: { xs: "center", md: "space-between" },
-          flexDirection: { xs: "column", md: "row" },
+          justifyContent: { xs: "center", sm: "flex-start" },
+          flexDirection: { xs: "column", sm: "row" },
+          gap: { xs: 0, sm: "5rem" },
           flexWrap: "wrap",
           width: "100%",
           mt: "4rem",
+          px: { xs: "0rem", sm: "4rem" },
         }}
       >
         {cardData.map((data) => {
@@ -77,7 +80,7 @@ const Team = () => {
                 maxWidth: "250px",
                 maxHeight: "250px",
                 textAlign: "center",
-                mx: "auto",
+
                 my: 3,
                 backgroundColor: "#3c3c3c80",
                 padding: { xs: "auto", sm: "2rem" },

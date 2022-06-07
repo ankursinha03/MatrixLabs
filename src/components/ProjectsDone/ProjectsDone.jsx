@@ -34,6 +34,9 @@ const ProjectsDone = () => {
       maxWidth="xl"
       sx={{
         my: "5rem",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
       }}
     >
       <Box
@@ -41,7 +44,8 @@ const ProjectsDone = () => {
           width: "100%",
           height: "auto",
           my: 3,
-          mx: { xs: "auto", sm: 2 },
+          mx: 3,
+          px: { xs: "0rem", sm: "3rem" },
           color: "white",
         }}
       >
@@ -65,174 +69,174 @@ const ProjectsDone = () => {
         >
           MATRIX LABS
         </Typography>
-        <Container
-          maxWidth="md"
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            mt: 5,
-          }}
-        >
-          <Box
-            sx={{
-              width: "100%",
-              backgroundColor: "#28282880",
-              display: "flex",
-              flexDirection: "row",
-              flexWrap: "nowrap",
-              borderRadius: "10px",
-            }}
-          >
-            {navData.map((item) => {
-              return (
-                <Button
-                  sx={{
-                    m: 1,
-                    backgroundColor:
-                      activeNav === item ? "#00D186" : "transparent",
-                    color: "white",
-                    fontFamily: "Montserrat",
-                    fontWeight: 600,
-                    display: "block",
-                    fontSize: "1rem",
-                    padding: "0px 0.5rem",
-                    borderRadius: "10px",
-                    "&:hover": {
-                      backgroundColor:
-                        activeNav === item ? "#00D186" : "transparent",
-                    },
-                  }}
-                  onClick={() => setActiveNav(item)}
-                >
-                  {item}
-                </Button>
-              );
-            })}
-          </Box>
-        </Container>
+      </Box>
+      <Container
+        maxWidth="xl"
+        sx={{
+          mt: 5,
+          mx: { xs: "auto", sm: 4, md: 5 },
+        }}
+      >
         <Box
           sx={{
+            width: { xs: "100%", sm: "90%", md: "94%" },
+            backgroundColor: "#28282880",
             display: "flex",
-            flexDirection: { xs: "column", md: "row" },
-            flexWrap: "wrap",
-            justifyContent: { xs: "center", md: "evenly" },
-            mt: { xs: "4rem", md: 2 },
-            width: "100%",
+            flexDirection: "row",
+            flexWrap: "nowrap",
+            borderRadius: "10px",
+            p: { xs: "auto", sm: "3px" },
           }}
         >
-          {cardData.map((card) => {
+          {navData.map((item) => {
             return (
+              <Button
+                sx={{
+                  m: 1,
+                  backgroundColor:
+                    activeNav === item ? "#00D186" : "transparent",
+                  color: "white",
+                  fontFamily: "Montserrat",
+                  fontWeight: 600,
+                  display: "block",
+                  fontSize: "1rem",
+                  padding: "0px 0.5rem",
+                  borderRadius: "10px",
+                  "&:hover": {
+                    backgroundColor:
+                      activeNav === item ? "#00D186" : "transparent",
+                  },
+                }}
+                onClick={() => setActiveNav(item)}
+              >
+                {item}
+              </Button>
+            );
+          })}
+        </Box>
+      </Container>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          flexWrap: "wrap",
+          justifyContent: { xs: "center", md: "evenly" },
+          mt: { xs: "4rem", md: 2 },
+          width: "100%",
+        }}
+      >
+        {cardData.map((card) => {
+          return (
+            <Box
+              sx={{
+                height: "auto",
+                width: "100%",
+                maxWidth: { xs: "500px", sm: "80%", md: "max( 40% , 475px)" },
+                mx: { xs: "auto", md: 3 },
+                display: "flex",
+                flexDirection: "column",
+                flexWrap: { xs: "wrap", sm: "nowrap" },
+                justifyContent: "space-around",
+                backgroundColor: "#3c3c3c80",
+                borderRadius: "20px",
+                p: { xs: "auto", sm: 2.5 },
+                py: { xs: 2 },
+                my: 3,
+              }}
+            >
               <Box
                 sx={{
-                  height: "auto",
-                  width: "100%",
-                  maxWidth: "400px",
-                  mx: { xs: "auto", md: 5 },
                   display: "flex",
                   flexDirection: "column",
-                  flexWrap: { xs: "wrap", sm: "nowrap" },
-                  justifyContent: "space-around",
-                  backgroundColor: "#3c3c3c80",
-                  borderRadius: "20px",
-                  p: { xs: "auto", sm: 2.5 },
-                  py: { xs: 2 },
-                  my: 3,
+                  justifyContent: "center",
                 }}
               >
                 <Box
                   sx={{
                     display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
+                    flexDirection: "row",
+                    alignItems: "center",
                   }}
                 >
                   <Box
+                    component="img"
+                    src={metamarketing}
+                    alt="icon"
                     sx={{
-                      display: "flex",
-                      flexDirection: "row",
-                      alignItems: "center",
+                      height: "30px",
+                      width: "55px",
                     }}
-                  >
-                    <Box
-                      component="img"
-                      src={metamarketing}
-                      alt="icon"
-                      sx={{
-                        height: "30px",
-                        width: "55px",
-                      }}
-                    />
-                    <Typography
-                      variant="h6"
-                      sx={{
-                        fontFamily: "Montserrat",
-                        fontWeight: 600,
-                        fontSize: "1.3rem",
-                      }}
-                    >
-                      {card.header}
-                    </Typography>
-                    <Box flexGrow={1} />
-                    <Box
-                      component="img"
-                      src={paperPlane}
-                      alt="paper plane"
-                      sx={{
-                        height: "27px",
-                        width: "27px",
-                        mx: 0.5,
-                      }}
-                    />
-                    <Box
-                      component="img"
-                      src={globe}
-                      alt="globe"
-                      sx={{
-                        height: "27px",
-                        width: "27px",
-                        mx: 0.5,
-                      }}
-                    />
-                  </Box>
+                  />
                   <Typography
                     variant="h6"
                     sx={{
-                      fontFamily: "Poppins",
-                      fontWeight: 500,
-                      color: "#c2c2c2",
-                      fontSize: "0.95rem",
-                      ml: "8px",
-                      mt: 1,
+                      fontFamily: "Montserrat",
+                      fontWeight: 600,
+                      fontSize: "1.3rem",
+                      color: "white",
                     }}
                   >
-                    {card.text}
+                    {card.header}
                   </Typography>
+                  <Box flexGrow={1} />
+                  <Box
+                    component="img"
+                    src={paperPlane}
+                    alt="paper plane"
+                    sx={{
+                      height: "27px",
+                      width: "27px",
+                      mx: 0.5,
+                    }}
+                  />
+                  <Box
+                    component="img"
+                    src={globe}
+                    alt="globe"
+                    sx={{
+                      height: "27px",
+                      width: "27px",
+                      mx: 0.5,
+                    }}
+                  />
                 </Box>
-                <Button
+                <Typography
+                  variant="h6"
                   sx={{
-                    ml: 1,
-                    mt: 2,
-                    backgroundColor: "#00D186",
-                    color: "black",
-                    display: "block",
-                    fontSize: "0.9rem",
-                    fontWeight: 500,
                     fontFamily: "Poppins",
-                    maxWidth: "150px",
-                    p: "1px 4px",
-                    borderRadius: "7px",
-                    "&:hover": {
-                      backgroundColor: "#00D186",
-                    },
+                    fontWeight: 500,
+                    color: "#c2c2c2",
+                    fontSize: "0.95rem",
+                    ml: "8px",
+                    mt: 1,
                   }}
                 >
-                  KNOW MORE
-                </Button>
+                  {card.text}
+                </Typography>
               </Box>
-            );
-          })}
-        </Box>
+              <Button
+                sx={{
+                  ml: 1,
+                  mt: 2,
+                  backgroundColor: "#00D186",
+                  color: "black",
+                  display: "block",
+                  fontSize: "0.9rem",
+                  fontWeight: 500,
+                  fontFamily: "Poppins",
+                  maxWidth: "150px",
+                  p: "1px 4px",
+                  borderRadius: "7px",
+                  "&:hover": {
+                    backgroundColor: "#00D186",
+                  },
+                }}
+              >
+                KNOW MORE
+              </Button>
+            </Box>
+          );
+        })}
       </Box>
     </Container>
   );

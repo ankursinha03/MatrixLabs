@@ -27,7 +27,8 @@ const WhyUs = () => {
           width: "100%",
           height: "auto",
           my: 3,
-          mx: 2,
+          mx: 3,
+          px: { xs: "0rem", sm: "3rem" },
           color: "white",
         }}
       >
@@ -64,18 +65,18 @@ const WhyUs = () => {
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "100%", md: "500px" },
+            maxWidth: { xs: "600px", md: "500px" },
             mx: "auto",
           }}
           component="img"
-          alt="Earth"
+          alt="blockchain"
           src={blockchain}
         ></Box>
         <Box
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "60%", md: "40%" },
+            maxWidth: { xs: "60%", md: "43%" },
             mx: "auto",
             display: "flex",
             flexDirection: "column",
@@ -116,13 +117,14 @@ const WhyUs = () => {
               sx={{
                 width: "100%",
                 height: "100%",
-                maxWidth: "175px",
-                maxHeight: "200px",
+                maxWidth: "200px",
+                maxHeight: "250px",
                 textAlign: "center",
                 mx: "auto",
                 my: 3,
                 backgroundColor: "#3c3c3c80",
                 padding: "2rem",
+                py: "2.5rem",
                 borderRadius: "20px",
               }}
             >

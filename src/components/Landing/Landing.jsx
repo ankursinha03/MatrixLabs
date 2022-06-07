@@ -46,12 +46,13 @@ const Landing = () => {
                 fontWeight: 700,
                 borderLeft: "3px solid #00d186",
                 px: 2.5,
+                fontSize: { xs: "0.8rem", sm: "1.1rem" },
               }}
             >
               THE MATRIX LABS
             </Typography>
             <Typography
-              variant="h4"
+              variant="h3"
               sx={{
                 fontWeight: 700,
                 mt: 2,
@@ -60,7 +61,7 @@ const Landing = () => {
               WE CREATE
             </Typography>
             <Typography
-              variant="h4"
+              variant="h3"
               sx={{
                 fontWeight: 700,
                 color: "#00d186",
@@ -74,6 +75,7 @@ const Landing = () => {
               sx={{
                 fontWeight: 500,
                 mt: 2,
+                fontSize: { xs: "0.9rem", md: "1.1rem" },
               }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -96,9 +98,9 @@ const Landing = () => {
                   color: "white",
                   fontWeight: 600,
                   display: "block",
-                  fontSize: "1rem",
+                  fontSize: "1.1rem",
                   width: "100%",
-                  padding: "2px 1rem",
+                  padding: "3px 1rem",
                 }}
               >
                 KNOW MORE
@@ -110,10 +112,10 @@ const Landing = () => {
                   backgroundColor: "#00D186",
                   color: "black",
                   display: "block",
-                  fontSize: "1rem",
+                  fontSize: "1.1rem",
                   fontWeight: 600,
                   width: "100%",
-                  padding: "2px 1rem",
+                  padding: "3px 1rem",
                   "&:hover": {
                     backgroundColor: "#00D186",
                   },

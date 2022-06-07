@@ -36,7 +36,8 @@ const ServicesProvided = () => {
           width: "100%",
           height: "auto",
           my: 3,
-          mx: 2,
+          mx: 3,
+          px: { xs: "0rem", sm: "3rem" },
           color: "white",
         }}
       >
@@ -77,15 +78,15 @@ const ServicesProvided = () => {
               sx={{
                 height: "auto",
                 width: "100%",
-                maxWidth: "400px",
-                mx: { xs: "auto", md: 5 },
+                maxWidth: { xs: "500px", sm: "80%", md: "max( 40% , 475px)" },
+                mx: { xs: "auto", md: 3 },
                 display: "flex",
                 flexDirection: "row",
                 flexWrap: { xs: "wrap", sm: "nowrap" },
                 justifyContent: "space-around",
                 backgroundColor: "#3c3c3c80",
                 borderRadius: "20px",
-                p: { xs: "auto", sm: 2 },
+                px: { xs: "auto", sm: 3 },
                 py: { xs: 2 },
                 my: 3,
               }}
