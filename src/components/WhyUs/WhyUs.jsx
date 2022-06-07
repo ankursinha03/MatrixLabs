@@ -119,6 +119,7 @@ const WhyUs = () => {
         {cardData.map((data) => {
           return (
             <Box
+              key={data.text}
               sx={{
                 width: "100%",
                 height: "100%",

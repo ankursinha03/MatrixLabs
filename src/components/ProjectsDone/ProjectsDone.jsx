@@ -96,6 +96,7 @@ const ProjectsDone = () => {
           {navData.map((item) => {
             return (
               <Button
+                key={item}
                 sx={{
                   my: 1,
                   ml: { xs: 1, sm: 0 },
@@ -136,6 +137,7 @@ const ProjectsDone = () => {
         {cardData.map((card) => {
           return (
             <Box
+              key={card.header}
               sx={{
                 height: "auto",
                 width: "100%",

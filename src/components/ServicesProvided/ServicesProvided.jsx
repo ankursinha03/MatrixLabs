@@ -78,6 +78,7 @@ const ServicesProvided = () => {
         {cardData.map((card) => {
           return (
             <Box
+              key={card.header}
               sx={{
                 height: "auto",
                 width: "100%",

@@ -78,13 +78,13 @@ const Team = () => {
         {cardData.map((data) => {
           return (
             <Box
+              key={data.name}
               sx={{
                 width: "100%",
                 height: "100%",
                 maxWidth: "250px",
                 maxHeight: "250px",
                 textAlign: "center",
-
                 my: 3,
                 backgroundColor: "#3c3c3c80",
                 padding: { xs: "auto", sm: "2rem" },
