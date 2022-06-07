@@ -39,6 +39,7 @@ const ProjectsDone = () => {
         justifyContent: "center",
       }}
     >
+      <span id="projects" />
       <Box
         sx={{
           width: "100%",

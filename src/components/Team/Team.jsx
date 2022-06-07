@@ -28,6 +28,7 @@ const Team = () => {
         my: "5rem",
       }}
     >
+      <span id="team" />
       <Box
         sx={{
           width: "100%",

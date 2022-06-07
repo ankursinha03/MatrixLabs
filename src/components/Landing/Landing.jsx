@@ -20,6 +20,7 @@ const Landing = () => {
           mt: { xs: "4rem", md: 2 },
         }}
       >
+        <span id="home" />
         <Box
           sx={{
             height: "auto",

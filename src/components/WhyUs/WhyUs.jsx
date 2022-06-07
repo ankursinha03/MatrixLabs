@@ -22,6 +22,7 @@ const WhyUs = () => {
         my: 5,
       }}
     >
+      <span id="about" />
       <Box
         sx={{
           width: "100%",

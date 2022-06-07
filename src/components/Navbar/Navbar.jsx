@@ -14,7 +14,7 @@ import Logo from "../../assets/logo.png";
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const pages = ["ABOUT", "SERVICES", "PROJECTS", "CONTACT"];
+  const pages = ["about", "services", "projects", "contact"];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -100,8 +100,13 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ color: "white" }} textAlign="center">
-                    {page}
+                  <Typography
+                    component="a"
+                    href={`#${page}`}
+                    sx={{ color: "white", textDecoration: "none" }}
+                    textAlign="center"
+                  >
+                    {page.toUpperCase()}
                   </Typography>
                 </MenuItem>
               ))}
@@ -119,6 +124,8 @@ const Navbar = () => {
           >
             {pages.map((page) => (
               <Button
+                component="a"
+                href={`#${page}`}
                 key={page}
                 sx={{
                   my: 2,
