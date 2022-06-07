@@ -86,7 +86,7 @@ const ProjectsDone = () => {
             display: "flex",
             flexDirection: "row",
             flexWrap: "nowrap",
-            gap: 2,
+            gap: { xs: 1, sm: 2 },
             borderRadius: "10px",
             p: { xs: "auto", sm: "3px" },
             overflowX: "auto",
@@ -97,6 +97,7 @@ const ProjectsDone = () => {
               <Button
                 sx={{
                   my: 1,
+                  ml: { xs: 1, sm: 0 },
                   backgroundColor:
                     activeNav === item ? "#00D186" : "transparent",
                   color: "white",
