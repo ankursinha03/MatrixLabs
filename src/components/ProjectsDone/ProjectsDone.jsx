@@ -155,6 +155,7 @@ const ProjectsDone = () => {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
+                  p: { xs: 1, sm: 0 },
                 }}
               >
                 <Box
@@ -222,7 +223,7 @@ const ProjectsDone = () => {
               </Box>
               <Button
                 sx={{
-                  ml: 1,
+                  ml: { xs: 2, sm: 1 },
                   mt: 2,
                   backgroundColor: "#00D186",
                   color: "black",

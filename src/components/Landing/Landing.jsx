@@ -77,7 +77,7 @@ const Landing = () => {
               sx={{
                 fontWeight: 500,
                 mt: 2,
-                fontSize: { xs: "0.9rem", sm: "1.1rem" },
+                fontSize: { xs: "1.1rem", sm: "1.2rem" },
               }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

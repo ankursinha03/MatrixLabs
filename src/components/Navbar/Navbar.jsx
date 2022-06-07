@@ -11,10 +11,10 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "../../assets/logo.png";
 
-const pages = ["ABOUT", "SERVICES", "PROJECTS", "CONTACT"];
-
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+  const pages = ["ABOUT", "SERVICES", "PROJECTS", "CONTACT"];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
