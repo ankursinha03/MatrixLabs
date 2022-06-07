@@ -5,9 +5,19 @@ import Typography from "@mui/material/Typography";
 import Navbar from "../Navbar/Navbar";
 import Button from "@mui/material/Button";
 import earth from "../../assets/earth.png";
+import TxtRotate from "../../scripts/TextRotate";
 import styles from "./Landing.module.css";
 
 const Landing = () => {
+  React.useEffect(() => {
+    const rotateElement = document.getElementById("txt-rotate");
+    const toRotate = ["CUSTOM CONTRACT", "LOREM", "IPSUM"];
+    const period = 1000;
+    if (toRotate) {
+      new TxtRotate(rotateElement, toRotate, period);
+    }
+  }, []);
+
   return (
     <div className={styles.landing}>
       <Navbar />
@@ -63,6 +73,7 @@ const Landing = () => {
               WE CREATE
             </Typography>
             <Typography
+              id="txt-rotate"
               variant="h3"
               sx={{
                 fontWeight: 700,

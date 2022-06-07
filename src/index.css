@@ -35,3 +35,7 @@ body::-webkit-scrollbar-thumb {
   background: #00d186;
   border-radius: 3px;
 }
+
+#txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
