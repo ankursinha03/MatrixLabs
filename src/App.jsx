@@ -3,6 +3,7 @@ import WhyUs from "./components/WhyUs/WhyUs";
 import ServicesProvided from "./components/ServicesProvided/ServicesProvided";
 import ProjectsDone from "./components/ProjectsDone/ProjectsDone";
 import Team from "./components/Team/Team";
+import FAQs from "./components/FAQs/FAQ";
 import Footer from "./components/Footer/Footer";
 import styles from "./App.module.css";
 
@@ -19,6 +20,7 @@ function App() {
           <ProjectsDone />
         </div>
         <Team />
+        <FAQs />
         <Footer />
       </div>
     </div>
