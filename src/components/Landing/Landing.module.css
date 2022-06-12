@@ -1,8 +1,24 @@
 .landing {
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
   background-image: url("../../assets/background-lines.png");
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .earth {
+    animation: spin infinite 20s linear;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 900px) {

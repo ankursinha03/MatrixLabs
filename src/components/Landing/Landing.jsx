@@ -141,6 +141,7 @@ const Landing = () => {
           </Box>
         </Box>
         <Box
+          className={styles.earth}
           sx={{
             height: "auto",
             width: "100%",
