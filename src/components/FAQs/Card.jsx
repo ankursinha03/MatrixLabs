@@ -14,16 +14,16 @@ export default function MyCard({ data }) {
         height: "max-content",
         width: "100%",
         maxWidth: { xs: "500px", sm: "80%", md: "max( 40% , 475px)" },
-        mx: { xs: "auto", md: 3 },
+        mx: { xs: "auto", md: 2 },
         display: "flex",
         flexDirection: "column",
         flexWrap: { xs: "wrap", sm: "nowrap" },
         justifyContent: "space-around",
         backgroundColor: "#3c3c3c80",
-        borderRadius: "20px",
+        borderRadius: "3px",
         p: { xs: "auto", sm: 2.5 },
         py: { xs: 2 },
-        my: 3,
+        my: 2,
       }}
     >
       <Box
@@ -48,8 +48,8 @@ export default function MyCard({ data }) {
             variant="h6"
             sx={{
               fontFamily: "Montserrat",
-              fontWeight: 600,
-              fontSize: { xs: "1.1rem", sm: "1.3rem" },
+              fontWeight: 500,
+              fontSize: { xs: "1.0rem", sm: "1.1rem" },
               color: "white",
               whiteSpace: expand ? "normal" : "nowrap",
               textOverflow: "ellipsis",

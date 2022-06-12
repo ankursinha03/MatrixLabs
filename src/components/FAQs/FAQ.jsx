@@ -52,7 +52,19 @@ const FAQs = () => {
             fontWeight: 700,
           }}
         >
-          FAQ<span className={styles.borderText}>s</span>
+          FREQUENTLY ASKED
+        </Typography>
+        <Typography
+          variant="h3"
+          className={styles.borderText}
+          sx={{
+            fontFamily: "Montserrat",
+            fontWeight: 700,
+            fontSize: { xs: "2.5rem", sm: "3rem" },
+            color: "transparent",
+          }}
+        >
+          QUESTIONS
         </Typography>
       </Box>
       <Box
