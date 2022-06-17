@@ -13,19 +13,11 @@ const ProjectsDone = () => {
   const navData = ["DAPPs", "Contracts", "NFT's", "Websites"];
   const cardData = [
     {
-      header: "METAMARKETING",
+      header: "COSMIC",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit adipiscing adipiscing elit ",
     },
     {
-      header: "METAMARKETING",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit adipiscing adipiscing elit ",
-    },
-    {
-      header: "METAMARKETING",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit adipiscing adipiscing elit ",
-    },
-    {
-      header: "METAMARKETING",
+      header: "Rocket Global",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit adipiscing adipiscing elit ",
     },
   ];
@@ -91,6 +83,7 @@ const ProjectsDone = () => {
             borderRadius: "10px",
             p: { xs: "auto", sm: "3px" },
             overflowX: "auto",
+            scrollbarWidth: "thin",
           }}
         >
           {navData.map((item) => {
@@ -99,7 +92,7 @@ const ProjectsDone = () => {
                 key={item}
                 sx={{
                   my: 1,
-                  ml: { xs: 1, sm: 0 },
+                  ml: { xs: 1, sm: 1.5 },
                   backgroundColor:
                     activeNav === item ? "#00D186" : "transparent",
                   color: "white",

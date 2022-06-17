@@ -3,17 +3,17 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import blockchain from "../../assets/blockchain.png";
-import medal from "../../assets/medal.png";
-import ether from "../../assets/ether.png";
-import contract from "../../assets/contract.png";
+// import medal from "../../assets/medal.png";
+// import ether from "../../assets/ether.png";
+// import contract from "../../assets/contract.png";
 import styles from "./WhyUs.module.css";
 
 const WhyUs = () => {
-  const cardData = [
-    { image: medal, text: "ugiat nulla Tech pariatum" },
-    { image: contract, text: "Lorem ipsum dolor sit amet" },
-    { image: ether, text: "Lorem ipsum dolor sit amet" },
-  ];
+  // const cardData = [
+  //   { image: medal, text: "ugiat nulla Tech pariatum" },
+  //   { image: contract, text: "Lorem ipsum dolor sit amet" },
+  //   { image: ether, text: "Lorem ipsum dolor sit amet" },
+  // ];
 
   return (
     <Container
@@ -96,17 +96,16 @@ const WhyUs = () => {
               fontWeight: 500,
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Security is critical in the blockchain space. Our services help
+            everyone from startups to enterprises to launch and maintain their
+            applications on the blockchain.
+            <br />
+            We make sure to deliver the product fast and provide active support
+            to the client in every phase including presale.
           </Typography>
         </Box>
       </Box>
-      <Box
+      {/* <Box
         sx={{
           display: "flex",
           justifyContent: { xs: "center", md: "space-between" },
@@ -123,7 +122,7 @@ const WhyUs = () => {
               sx={{
                 width: "100%",
                 height: "100%",
-                maxWidth: {xs:"200px", sm:"350px"},
+                maxWidth: { xs: "200px", sm: "350px" },
                 maxHeight: "250px",
                 textAlign: "center",
                 mx: "auto",
@@ -160,7 +159,7 @@ const WhyUs = () => {
             </Box>
           );
         })}
-      </Box>
+      </Box> */}
     </Container>
   );
 };

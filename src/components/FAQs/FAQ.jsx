@@ -8,21 +8,21 @@ import styles from "./FAQs.module.css";
 const FAQs = () => {
   const cardData = [
     {
-      question: "What is life?",
+      question: "Do you provide custom smart contracts?",
       answer: "Idk bro its just life",
     },
     {
-      question: "What is sad life but this is a very long question?",
+      question: "How long is the after sales service?",
       answer:
         "Idk bro its just life but this is also a very very very long answer",
     },
     {
-      question: "What is sad life but this is a very long question?",
+      question: "Do you provide hosting as well?",
       answer:
         "Idk bro its just life but this is also a very very very long answer",
     },
     {
-      question: "What is life?",
+      question: "Do you provide presale support?",
       answer: "Idk bro its just life",
     },
   ];

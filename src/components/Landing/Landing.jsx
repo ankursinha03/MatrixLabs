@@ -11,7 +11,7 @@ import styles from "./Landing.module.css";
 const Landing = () => {
   React.useEffect(() => {
     const rotateElement = document.getElementById("txt-rotate");
-    const toRotate = ["CUSTOM CONTRACT", "LOREM", "IPSUM"];
+    const toRotate = ["CUSTOM CONTRACTs", "NFT MARKETPLACEs", "DAPPs"];
     const period = 1000;
     if (toRotate) {
       new TxtRotate(rotateElement, toRotate, period);
@@ -92,8 +92,9 @@ const Landing = () => {
                 fontSize: { xs: "1.1rem", sm: "1.2rem" },
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We provide blockchain services from Smart Contract Development and
+              Audit to creating Launchpads, NFT Marketplaces and any kind of
+              unique DAPPs
             </Typography>
             <Box
               sx={{

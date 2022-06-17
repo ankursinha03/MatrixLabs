@@ -10,16 +10,24 @@ import styles from "./ServicesProvided.module.css";
 
 const ServicesProvided = () => {
   const cardData = [
-    { image: coinbag, header: "EARN", text: "ugiat nulla Tech pariatum" },
-    { image: ethereum, header: "TRACK", text: "Lorem ipsum dolor sit amet" },
+    {
+      image: coinbag,
+      header: "Smart Contract Dev",
+      text: "ugiat nulla Tech pariatum",
+    },
+    {
+      image: ethereum,
+      header: "NFT Smart Contract Dev",
+      text: "Lorem ipsum dolor sit amet",
+    },
     {
       image: calculator,
-      header: "CALCULATOR",
+      header: "Audit",
       text: "Lorem ipsum dolor sit amet",
     },
     {
       image: etherWallet,
-      header: "SEND KRYPT",
+      header: "DAPPs",
       text: "Lorem ipsum dolor sit amet",
     },
   ];
@@ -73,7 +81,6 @@ const ServicesProvided = () => {
           justifyContent: { xs: "center", md: "evenly" },
           mt: { xs: "4rem", md: 2 },
           width: "100%",
-
         }}
       >
         {cardData.map((card) => {
@@ -82,7 +89,7 @@ const ServicesProvided = () => {
               key={card.header}
               sx={{
                 height: "auto",
-                width: "100%", 
+                width: "100%",
                 maxWidth: { xs: "90%", sm: "80%", md: "max( 40% , 475px)" },
                 mx: { xs: "auto", md: 3 },
                 display: "flex",
