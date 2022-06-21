@@ -11,3 +11,8 @@
   background-image: url("/src/assets/grey-mountains.png");
   background-size: cover;
 }
+
+.lineBgWrapper {
+  background-image: url("/src/assets/linebg.png");
+  background-size: cover;
+}

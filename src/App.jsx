@@ -18,12 +18,18 @@ function App() {
         <div className={styles.greyMountainWrapper}>
           <WhyUs />
         </div>
-        <Ideas />
+        <div className={styles.lineBgWrapper}>
+          <Ideas />
+        </div>
         <ServicesProvided />
-        <Growth />
-        <HowWeDevelop />
+        <div className={styles.lineBgWrapper}>
+          <Growth />
+        </div>
         <div className={styles.greyMountainWrapper}>
           <ProjectsDone />
+        </div>
+        <div className={styles.lineBgWrapper}>
+          <HowWeDevelop />
         </div>
         <Team />
         <FAQs />
