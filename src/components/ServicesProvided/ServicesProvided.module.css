@@ -2,3 +2,15 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #0ed8a7;
 }
+
+.card:nth-child(2) {
+  position: relative;
+  top: -70px;
+}
+
+@media screen and (max-width: 1240px) {
+  .card:nth-child(2) {
+    position: relative;
+    top: 0px;
+  }
+}

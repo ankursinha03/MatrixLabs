@@ -2,33 +2,27 @@ import React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import coinbag from "../../assets/coinbag.png";
-import ethereum from "../../assets/ethereum.png";
-import calculator from "../../assets/calculator.png";
-import etherWallet from "../../assets/ether-wallet.png";
+import block from "../../assets/block.svg";
+import blockchain from "../../assets/blockchain.svg";
+import globe from "../../assets/globeBig.svg";
 import styles from "./ServicesProvided.module.css";
 
 const ServicesProvided = () => {
   const cardData = [
     {
-      image: coinbag,
-      header: "Smart Contract Dev",
-      text: "ugiat nulla Tech pariatum",
+      image: block,
+      header: "Dapp Development",
+      text: "We focus on pragmatic approaches and solutions for using Blockchain for Integration in B2B ecosystems. We believe in a holistic approach where we guide you from ideation to realization of your Blockchain for Integration project.",
     },
     {
-      image: ethereum,
-      header: "NFT Smart Contract Dev",
-      text: "Lorem ipsum dolor sit amet",
+      image: blockchain,
+      header: "Smart Contract Development",
+      text: "Professional Blockchain smart contract development services and consultancy for smart contract architecture, design, and development",
     },
     {
-      image: calculator,
-      header: "Audit",
-      text: "Lorem ipsum dolor sit amet",
-    },
-    {
-      image: etherWallet,
-      header: "DAPPs",
-      text: "Lorem ipsum dolor sit amet",
+      image: globe,
+      header: "Website Development",
+      text: "We offer a wide range of web development services with latest web development features, including up-to-date guidelines, search friendliness for search accessibility, compatibility with a screen reader for visually impaired, web semantics, and rich snippets.",
     },
   ];
 
@@ -78,8 +72,8 @@ const ServicesProvided = () => {
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           flexWrap: "wrap",
-          justifyContent: { xs: "center", md: "evenly" },
-          mt: { xs: "4rem", md: 2 },
+          justifyContent: { xs: "center", md: "space-evenly" },
+          mt: { xs: "4rem", md: 12 },
           width: "100%",
         }}
       >
@@ -87,18 +81,20 @@ const ServicesProvided = () => {
           return (
             <Box
               key={card.header}
+              className={styles.card}
               sx={{
                 height: "auto",
                 width: "100%",
-                maxWidth: { xs: "90%", sm: "80%", md: "max( 40% , 475px)" },
+                maxWidth: { xs: "90%", sm: "80%", md: "300px" },
                 mx: { xs: "auto", md: 3 },
                 display: "flex",
-                flexDirection: "row",
+                flexDirection: "column",
                 flexWrap: { xs: "wrap", sm: "nowrap" },
-                justifyContent: "space-around",
+                justifyContent: "flex-start",
+                alignItems: "center",
                 backgroundColor: "#3c3c3c80",
                 borderRadius: "20px",
-                px: { xs: "auto", sm: 3 },
+                px: { xs: 2, sm: 3 },
                 py: { xs: 2 },
                 my: 3,
               }}
@@ -107,42 +103,39 @@ const ServicesProvided = () => {
                 sx={{
                   height: "auto",
                   width: "100%",
-                  maxWidth: "125px",
+                  maxWidth: "175px",
+                  mt: 2,
                 }}
                 component="img"
                 alt={card.header}
                 src={card.image}
               />
-              <Box
+              <Typography
+                variant="h6"
                 sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
+                  fontFamily: "Montserrat",
+                  fontWeight: 700,
+                  fontSize: { xs: "1rem", sm: "1.4rem" },
+                  color: "#ffffff",
+                  textAlign: "left",
+                  width: "100%",
+                  mt: 4,
                 }}
               >
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontFamily: "Montserrat",
-                    fontWeight: 700,
-                    fontSize: { xs: "1rem", sm: "1.4rem" },
-                    color: "#0ed8a7",
-                  }}
-                >
-                  {card.header}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontFamily: "Poppins",
-                    fontWeight: 500,
-                    fontSize: { xs: "0.9rem", sm: "1.3rem" },
-                    color: "white",
-                  }}
-                >
-                  {card.text}
-                </Typography>
-              </Box>
+                {card.header}
+              </Typography>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontFamily: "Montserrat",
+                  fontWeight: 500,
+                  fontSize: { xs: "0.8rem", sm: "1.1rem" },
+                  color: "#ffffffcc",
+                  mt: 1,
+                }}
+              >
+                {card.text}
+              </Typography>
             </Box>
           );
         })}

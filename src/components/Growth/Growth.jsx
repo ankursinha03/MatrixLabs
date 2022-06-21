@@ -11,7 +11,7 @@ const Growth = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", md: "row" },
+          flexDirection: { xs: "column-reverse", md: "row" },
           justifyContent: { xs: "center", md: "space-between" },
           mt: { xs: "4rem", md: 2 },
         }}
