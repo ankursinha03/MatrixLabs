@@ -124,7 +124,7 @@ const FAQs = () => {
               fontWeight: 500,
               fontSize: { xs: "1rem", sm: "1.2rem" },
               color: "white",
-              mt: { xs: "2rem", md: "3rem" },
+              mt: "2rem",
             }}
           >
             Don&rsquo;t hesitate to ask any questions, we will try our best to
@@ -133,7 +133,7 @@ const FAQs = () => {
           <Box
             sx={{
               display: "flex",
-              mt: { xs: "2rem", md: "3rem" },
+              mt: "2rem",
               gap: { xs: "0.5rem", sm: "1rem" },
             }}
           >

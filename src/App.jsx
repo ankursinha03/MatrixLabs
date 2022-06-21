@@ -6,6 +6,7 @@ import Growth from "./components/Growth/Growth";
 import ProjectsDone from "./components/ProjectsDone/ProjectsDone";
 import HowWeDevelop from "./components/HowWeDevelop/HowWeDevelop";
 import Team from "./components/Team/Team";
+import Testimonials from "./components/Testimonials/Testimonials";
 import FAQs from "./components/FAQs/FAQ";
 import Footer from "./components/Footer/Footer";
 import styles from "./App.module.css";
@@ -32,6 +33,9 @@ function App() {
           <HowWeDevelop />
         </div>
         <Team />
+        <div className={styles.lineBgWrapper}>
+          <Testimonials />
+        </div>
         <FAQs />
         <Footer />
       </div>

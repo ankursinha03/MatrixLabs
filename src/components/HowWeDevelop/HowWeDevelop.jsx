@@ -5,6 +5,7 @@ import circlearrow from "../../assets/circlearrow.png";
 import uidesign from "../../assets/uidesign.png";
 import web3integration from "../../assets/web3integration.png";
 import testing from "../../assets/testing.png";
+import styles from "./HowWeDevelop.module.css";
 
 const HowWeDevelop = () => {
   return (
@@ -122,13 +123,13 @@ const HowWeDevelop = () => {
           </Typography>
         </Box>
         <Box
+          className={styles.circleArrow}
           sx={{
             height: { xs: "50px", md: "70px" },
             width: "100%",
             maxWidth: { xs: "50px", md: "70px" },
             mx: "auto",
             my: { xs: "2rem", md: 0 },
-            rotate: { xs: "90deg", md: "0deg" },
           }}
           component="img"
           alt="circle arrow"
