@@ -44,28 +44,44 @@ const HowWeDevelop = () => {
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "600px", md: "250px" },
+            maxWidth: { xs: "300px", md: "250px" },
             mx: "auto",
+            display: "flex",
+            flexDirection: "column",
           }}
         >
           <Box
             sx={{
               height: "auto",
               width: "100%",
-              maxWidth: { xs: "600px", md: "250px" },
+              maxWidth: { xs: "300px", md: "250px" },
               mx: "auto",
             }}
             component="img"
             alt="uidesign"
             src={uidesign}
           ></Box>
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: "Montserrat",
+              color: "white",
+              fontWeight: 600,
+              textAlign: "center",
+              fontSize: { xs: "1.2rem", sm: "1.4rem" },
+            }}
+          >
+            UI DESIGNING
+          </Typography>
         </Box>
         <Box
           sx={{
-            height: "70px",
+            height: { xs: "50px", md: "70px" },
             width: "100%",
-            maxWidth: { xs: "70px", md: "70px" },
+            maxWidth: { xs: "50px", md: "70px" },
             mx: "auto",
+            my: { xs: "2rem", md: 0 },
+            rotate: { xs: "90deg", md: "0deg" },
           }}
           component="img"
           alt="circle arrow"
@@ -75,28 +91,44 @@ const HowWeDevelop = () => {
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "600px", md: "250px" },
+            maxWidth: { xs: "300px", md: "250px" },
             mx: "auto",
+            display: "flex",
+            flexDirection: "column",
           }}
         >
           <Box
             sx={{
               height: "auto",
               width: "100%",
-              maxWidth: { xs: "600px", md: "250px" },
+              maxWidth: { xs: "300px", md: "250px" },
               mx: "auto",
             }}
             component="img"
             alt="web3integration"
             src={web3integration}
           ></Box>
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: "Montserrat",
+              color: "white",
+              fontWeight: 600,
+              textAlign: "center",
+              fontSize: { xs: "1.2rem", sm: "1.4rem" },
+            }}
+          >
+            WEB3 INTEGRATION
+          </Typography>
         </Box>
         <Box
           sx={{
-            height: "70px",
+            height: { xs: "50px", md: "70px" },
             width: "100%",
-            maxWidth: { xs: "70px", md: "70px" },
+            maxWidth: { xs: "50px", md: "70px" },
             mx: "auto",
+            my: { xs: "2rem", md: 0 },
+            rotate: { xs: "90deg", md: "0deg" },
           }}
           component="img"
           alt="circle arrow"
@@ -106,21 +138,35 @@ const HowWeDevelop = () => {
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "600px", md: "250px" },
+            maxWidth: { xs: "300px", md: "250px" },
             mx: "auto",
+            display: "flex",
+            flexDirection: "column",
           }}
         >
           <Box
             sx={{
               height: "auto",
               width: "100%",
-              maxWidth: { xs: "600px", md: "250px" },
+              maxWidth: { xs: "300px", md: "250px" },
               mx: "auto",
             }}
             component="img"
             alt="complete testing"
             src={testing}
           ></Box>
+          <Typography
+            variant="h6"
+            sx={{
+              fontFamily: "Montserrat",
+              color: "white",
+              fontWeight: 600,
+              textAlign: "center",
+              fontSize: { xs: "1.2rem", sm: "1.4rem" },
+            }}
+          >
+            COMPLETE TESTING
+          </Typography>
         </Box>
       </Box>
     </Container>

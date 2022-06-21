@@ -58,6 +58,7 @@ const Ideas = () => {
               flexDirection: "column",
               justifyContent: "space-around",
               height: "100%",
+              mt: 5,
             }}
           >
             <Box

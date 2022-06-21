@@ -3,17 +3,17 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import blockchain from "../../assets/blockchain.png";
-// import medal from "../../assets/medal.png";
-// import ether from "../../assets/ether.png";
-// import contract from "../../assets/contract.png";
+import maple from "../../assets/maple.png";
+import lightning from "../../assets/lightning.png";
+import contract from "../../assets/contract.png";
 import styles from "./WhyUs.module.css";
 
 const WhyUs = () => {
-  // const cardData = [
-  //   { image: medal, text: "ugiat nulla Tech pariatum" },
-  //   { image: contract, text: "Lorem ipsum dolor sit amet" },
-  //   { image: ether, text: "Lorem ipsum dolor sit amet" },
-  // ];
+  const cardData = [
+    { image: maple, text: "Best In Class Service" },
+    { image: contract, text: "24x7 Customer Support" },
+    { image: lightning, text: "Faster Delivery" },
+  ];
 
   return (
     <Container
@@ -105,7 +105,7 @@ const WhyUs = () => {
           </Typography>
         </Box>
       </Box>
-      {/* <Box
+      <Box
         sx={{
           display: "flex",
           justifyContent: { xs: "center", md: "space-between" },
@@ -159,7 +159,7 @@ const WhyUs = () => {
             </Box>
           );
         })}
-      </Box> */}
+      </Box>
     </Container>
   );
 };
