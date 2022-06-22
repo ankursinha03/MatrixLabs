@@ -12,33 +12,9 @@ export default class TxtRotate {
     const i = this.loopNum % this.toRotate.length;
     const fullTxt = this.toRotate[i];
     if (!this.isDeleting) {
-      if (
-        this.txt[this.txt.length - 2] === "D" &&
-        this.txt[this.txt.length - 3] === "E"
-      ) {
-        this.txt = fullTxt.substring(0, this.txt.length + 21);
-      } else if (
-        this.txt[this.txt.length - 1] === "y" &&
-        this.txt[this.txt.length - 2] === "h"
-      ) {
-        this.txt = fullTxt.substring(0, this.txt.length + 7);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
     } else {
-      if (
-        this.txt[this.txt.length - 1] === ">" &&
-        this.txt[this.txt.length - 2] === "'"
-      ) {
-        this.txt = fullTxt.substring(0, this.txt.length - 20);
-      } else if (
-        this.txt[this.txt.length - 1] === ">" &&
-        this.txt[this.txt.length - 2] === "n"
-      ) {
-        this.txt = fullTxt.substring(0, this.txt.length - 7);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      }
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
     }
 
     this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
