@@ -6,10 +6,11 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
+import WbSunnyIcon from "@mui/icons-material/WbSunny";
+import NightsStayIcon from "@mui/icons-material/NightsStay";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import Switch from "@mui/material/Switch";
 import Logo from "../../assets/logo.png";
 import styles from "./Navbar.module.css";
 
@@ -141,10 +142,30 @@ const Navbar = () => {
                 </MenuItem>
               ))}
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">DAPP</Typography>
+                <Typography className={styles.navText} textAlign="center">
+                  DAPP
+                </Typography>
               </MenuItem>
               <MenuItem>
-                <Switch checked={light} onChange={handleDarkMode} />
+                {light ? (
+                  <WbSunnyIcon
+                    sx={{
+                      color: "#000000cc",
+                      mx: 1,
+                      cursor: "pointer",
+                    }}
+                    onClick={handleDarkMode}
+                  />
+                ) : (
+                  <NightsStayIcon
+                    sx={{
+                      color: "#ffffffcc",
+                      mx: 1,
+                      cursor: "pointer",
+                    }}
+                    onClick={handleDarkMode}
+                  />
+                )}
               </MenuItem>
             </Menu>
           </Box>
@@ -187,7 +208,25 @@ const Navbar = () => {
             >
               DAPP
             </Button>
-            <Switch checked={light} onChange={handleDarkMode} />
+            {light ? (
+              <WbSunnyIcon
+                sx={{
+                  color: "#000000cc",
+                  mx: 1,
+                  cursor: "pointer",
+                }}
+                onClick={handleDarkMode}
+              />
+            ) : (
+              <NightsStayIcon
+                sx={{
+                  color: "#ffffffcc",
+                  mx: 1,
+                  cursor: "pointer",
+                }}
+                onClick={handleDarkMode}
+              />
+            )}
           </Box>
         </Toolbar>
       </Container>
