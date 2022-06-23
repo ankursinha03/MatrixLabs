@@ -29,13 +29,13 @@ const Testimonials = () => {
   return (
     <Container maxWidth="xl">
       <Box
+        className={styles.primaryText}
         sx={{
           height: "auto",
           my: "4rem",
           pt: "3rem",
           mx: 3,
           px: { xs: "0rem", sm: "3rem" },
-          color: "white",
         }}
       >
         <Typography
@@ -63,7 +63,7 @@ const Testimonials = () => {
         {cardData.map((card) => {
           return (
             <Box
-              key={card.header}
+              key={card.name}
               className={styles.card}
               sx={{
                 height: "auto",
@@ -75,7 +75,6 @@ const Testimonials = () => {
                 flexWrap: { xs: "wrap", sm: "nowrap" },
                 justifyContent: "flex-start",
                 alignItems: "center",
-                backgroundColor: "#232323a6",
                 borderRadius: "20px",
                 px: { xs: 2, sm: 3 },
                 py: { xs: 2 },
@@ -116,11 +115,11 @@ const Testimonials = () => {
               </Box>
               <Typography
                 variant="h6"
+                className={styles.primaryText}
                 sx={{
                   fontFamily: "Montserrat",
                   fontWeight: 500,
                   fontSize: { xs: "0.8rem", sm: "1.1rem" },
-                  color: "#ffffffcc",
                   mt: 1,
                 }}
               >
@@ -149,11 +148,11 @@ const Testimonials = () => {
                 />
                 <Typography
                   variant="h6"
+                  className={styles.primaryText}
                   sx={{
                     fontFamily: "Montserrat",
                     fontWeight: 700,
                     fontSize: { xs: "0.7rem", sm: "1rem" },
-                    color: "#ffffff",
                     textAlign: "left",
                     width: "100%",
                     mt: 2,

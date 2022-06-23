@@ -3,10 +3,16 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import ideas from "../../assets/ideasintoreality.png";
 import ProgressBar from "../Progressbar/Progressbar";
+import styles from "./Ideas.module.css";
 
 const Ideas = () => {
   return (
-    <Container maxWidth="xl">
+    <Container
+      maxWidth="xl"
+      sx={{
+        py: { xs: "0rem", sm: "2rem" },
+      }}
+    >
       <Box
         sx={{
           display: "flex",
@@ -30,8 +36,8 @@ const Ideas = () => {
           <Box>
             <Typography
               variant="h6"
+              className={styles.primaryText}
               sx={{
-                color: "white",
                 fontFamily: "Montserrat",
                 fontSize: { xs: "1.8rem", sm: "2.2rem" },
                 fontWeight: 700,
@@ -41,8 +47,8 @@ const Ideas = () => {
             </Typography>
             <Typography
               variant="h6"
+              className={styles.secondaryText}
               sx={{
-                color: "white",
                 fontFamily: "Poppins",
                 fontSize: { xs: "1.1rem", sm: "1.3rem" },
                 fontWeight: 500,
@@ -53,6 +59,7 @@ const Ideas = () => {
             </Typography>
           </Box>
           <Box
+            className={styles.primaryText}
             sx={{
               display: "flex",
               flexDirection: "column",
@@ -78,7 +85,6 @@ const Ideas = () => {
               >
                 <Typography
                   sx={{
-                    color: "white",
                     fontSize: { xs: "0.9rem", sm: "1.1rem" },
                     fontWeight: 500,
                   }}
@@ -87,7 +93,6 @@ const Ideas = () => {
                 </Typography>
                 <Typography
                   sx={{
-                    color: "white",
                     fontSize: { xs: "0.9rem", sm: "1.1rem" },
                     fontWeight: 500,
                   }}
@@ -114,7 +119,6 @@ const Ideas = () => {
               >
                 <Typography
                   sx={{
-                    color: "white",
                     fontSize: { xs: "0.9rem", sm: "1.1rem" },
                     fontWeight: 500,
                   }}
@@ -123,7 +127,6 @@ const Ideas = () => {
                 </Typography>
                 <Typography
                   sx={{
-                    color: "white",
                     fontSize: { xs: "0.9rem", sm: "1.1rem" },
                     fontWeight: 500,
                   }}
@@ -150,7 +153,6 @@ const Ideas = () => {
               >
                 <Typography
                   sx={{
-                    color: "white",
                     fontSize: { xs: "0.9rem", sm: "1.1rem" },
                     fontWeight: 500,
                   }}
@@ -159,7 +161,6 @@ const Ideas = () => {
                 </Typography>
                 <Typography
                   sx={{
-                    color: "white",
                     fontSize: { xs: "0.9rem", sm: "1.1rem" },
                     fontWeight: 500,
                   }}

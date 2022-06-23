@@ -30,10 +30,10 @@ const WhyUs = () => {
           my: 3,
           mx: 3,
           px: { xs: "0rem", sm: "3rem" },
-          color: "white",
         }}
       >
         <Typography
+          className={styles.primaryText}
           variant="h4"
           sx={{
             fontFamily: "Montserrat",
@@ -50,7 +50,6 @@ const WhyUs = () => {
             fontFamily: "Montserrat",
             fontWeight: 700,
             fontSize: { xs: "2.5rem", sm: "3rem" },
-            color: "transparent",
           }}
         >
           MATRIX LABS
@@ -89,8 +88,8 @@ const WhyUs = () => {
         >
           <Typography
             variant="h6"
+            className={styles.secondaryText}
             sx={{
-              color: "white",
               fontFamily: "Poppins",
               fontSize: { xs: "1.1rem", sm: "1.3rem" },
               fontWeight: 500,
@@ -118,6 +117,7 @@ const WhyUs = () => {
         {cardData.map((data) => {
           return (
             <Box
+              className={styles.card}
               key={data.text}
               sx={{
                 width: "100%",
@@ -127,7 +127,6 @@ const WhyUs = () => {
                 textAlign: "center",
                 mx: "auto",
                 my: 3,
-                backgroundColor: "#3c3c3c80",
                 padding: "2rem",
                 py: "2.5rem",
                 borderRadius: "20px",
@@ -146,8 +145,8 @@ const WhyUs = () => {
               ></Box>
               <Typography
                 variant="h6"
+                className={styles.primaryText}
                 sx={{
-                  color: "white",
                   fontFamily: "Poppins",
                   fontWeight: 500,
                   fontSize: "1.2rem",

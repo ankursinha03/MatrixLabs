@@ -4,10 +4,18 @@
   left: -65%;
 }
 
+.primaryText {
+  color: var(--primary-font-color);
+}
+
 .stars {
   position: relative;
   top: -160px;
   left: 15%;
+}
+
+.card {
+  background-color: var(--card-bg-transparent);
 }
 
 .card:nth-child(2) {

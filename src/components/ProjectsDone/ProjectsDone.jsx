@@ -44,6 +44,7 @@ const ProjectsDone = () => {
       >
         <Typography
           variant="h4"
+          className={styles.primaryText}
           sx={{
             fontFamily: "Montserrat",
             fontSize: { xs: "1.8rem", sm: "2.2rem" },
@@ -59,7 +60,6 @@ const ProjectsDone = () => {
             fontFamily: "Montserrat",
             fontWeight: 700,
             fontSize: { xs: "2.5rem", sm: "3rem" },
-            color: "transparent",
           }}
         >
           MATRIX LABS
@@ -73,9 +73,9 @@ const ProjectsDone = () => {
         }}
       >
         <Box
+          className={styles.card}
           sx={{
             width: { xs: "100%", sm: "90%", md: "94%" },
-            backgroundColor: "#28282880",
             display: "flex",
             flexDirection: "row",
             flexWrap: "nowrap",
@@ -89,13 +89,13 @@ const ProjectsDone = () => {
           {navData.map((item) => {
             return (
               <Button
+                className={styles.primaryText}
                 key={item}
                 sx={{
                   my: 1,
                   ml: { xs: 1, sm: 1.5 },
                   backgroundColor:
                     activeNav === item ? "#00D186" : "transparent",
-                  color: "white",
                   fontFamily: "Montserrat",
                   fontWeight: 600,
                   display: "block",
@@ -130,6 +130,7 @@ const ProjectsDone = () => {
         {cardData.map((card) => {
           return (
             <Box
+              className={styles.card}
               key={card.header}
               sx={{
                 height: "auto",
@@ -140,7 +141,6 @@ const ProjectsDone = () => {
                 flexDirection: "column",
                 flexWrap: { xs: "wrap", sm: "nowrap" },
                 justifyContent: "space-around",
-                backgroundColor: "#3c3c3c80",
                 borderRadius: "20px",
                 p: { xs: "auto", sm: 2.5 },
                 py: { xs: 2 },
@@ -173,17 +173,18 @@ const ProjectsDone = () => {
                   />
                   <Typography
                     variant="h6"
+                    className={styles.primaryText}
                     sx={{
                       fontFamily: "Montserrat",
                       fontWeight: 600,
                       fontSize: { xs: "1.1rem", sm: "1.3rem" },
-                      color: "white",
                     }}
                   >
                     {card.header}
                   </Typography>
                   <Box flexGrow={1} />
                   <Box
+                    className={styles.image}
                     component="img"
                     src={paperPlane}
                     alt="paper plane"
@@ -194,6 +195,7 @@ const ProjectsDone = () => {
                     }}
                   />
                   <Box
+                    className={styles.image}
                     component="img"
                     src={globe}
                     alt="globe"
@@ -206,10 +208,10 @@ const ProjectsDone = () => {
                 </Box>
                 <Typography
                   variant="h6"
+                  className={styles.secondaryText}
                   sx={{
                     fontFamily: "Poppins",
                     fontWeight: 500,
-                    color: "#c2c2c2",
                     fontSize: { xs: "0.8rem", sm: "0.95rem" },
                     ml: "8px",
                     mt: 1,

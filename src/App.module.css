@@ -1,9 +1,5 @@
-.App {
-  background-color: black;
-}
-
 .circleBg {
-  background-image: url("/src/assets/background-circle-design.png");
+  background-image: var(--circle-bg);
   background-size: 100%;
 }
 
@@ -13,6 +9,6 @@
 }
 
 .lineBgWrapper {
-  background-image: url("/src/assets/linebg.png");
+  background-image: var(--secondary-bg);
   background-size: cover;
 }

@@ -36,7 +36,6 @@ const Team = () => {
           my: 3,
           mx: 3,
           px: { xs: "0rem", sm: "3rem" },
-          color: "white",
         }}
       >
         <Typography
@@ -56,7 +55,6 @@ const Team = () => {
             fontFamily: "Montserrat",
             fontWeight: 700,
             fontSize: { xs: "2.5rem", sm: "3rem" },
-            color: "transparent",
           }}
         >
           MATRIX LABS
@@ -79,14 +77,14 @@ const Team = () => {
           return (
             <Box
               key={data.name}
+              className={styles.card}
               sx={{
                 width: "100%",
                 height: "100%",
-                maxWidth: {xs:"90%", sm:"250px"},
+                maxWidth: { xs: "90%", sm: "250px" },
                 maxHeight: "250px",
                 textAlign: "center",
                 my: 3,
-                backgroundColor: "#3c3c3c80",
                 padding: { xs: "auto", sm: "2rem" },
                 py: { xs: "1.5rem" },
                 borderRadius: "20px",
@@ -108,10 +106,10 @@ const Team = () => {
                 src={data.image}
               ></Box>
               <Button
+                className={styles.borderAndText}
                 sx={{
                   backgroundColor: "transparent",
-                  border: "1px solid #00D186",
-                  color: "#00D186",
+                  border: "1px solid",
                   fontSize: "10px",
                   p: "2px 4px",
                   width: "fit-content",
@@ -124,8 +122,8 @@ const Team = () => {
               </Button>
               <Typography
                 variant="h6"
+                className={styles.primaryText}
                 sx={{
-                  color: "white",
                   fontFamily: "Nunito Sans",
                   fontWeight: 500,
                   fontSize: "1.2rem",
@@ -136,8 +134,8 @@ const Team = () => {
               </Typography>
               <Typography
                 variant="h6"
+                className={styles.secondaryText}
                 sx={{
-                  color: "#ffffff99",
                   fontFamily: "Nunito Sans",
                   fontWeight: 500,
                   fontSize: "1rem",
@@ -154,9 +152,10 @@ const Team = () => {
                 }}
               >
                 <Button
+                  className={styles.borderAndText}
                   sx={{
                     backgroundColor: "transparent",
-                    border: "1px solid #00D186",
+                    border: "1px solid",
                     color: "#00D186",
                     fontSize: "0.7rem",
                     fontFamily: "Nunito Sans",
@@ -167,9 +166,8 @@ const Team = () => {
                   Message
                 </Button>
                 <Button
+                  className={styles.connectButton}
                   sx={{
-                    backgroundColor: "#00D186",
-                    color: "white",
                     fontFamily: "Nunito Sans",
                     borderRadius: "7px",
                     fontSize: "0.7rem",

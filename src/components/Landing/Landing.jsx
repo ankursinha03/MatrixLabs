@@ -40,9 +40,9 @@ const Landing = () => {
           }}
         >
           <Box
+            className={styles.landingText}
             sx={{
               textAlign: "left",
-              color: "white",
               display: "flex",
               justifyContent: "center",
               flexDirection: "column",
@@ -105,12 +105,12 @@ const Landing = () => {
               }}
             >
               <Button
+                className={styles.invertButton}
                 sx={{
                   my: 2.5,
                   mr: 1,
                   backgroundColor: "transparent",
                   border: "2px solid #00D186",
-                  color: "white",
                   fontWeight: 600,
                   display: "block",
                   fontSize: { xs: "0.9rem", sm: "1.1rem" },
@@ -125,7 +125,6 @@ const Landing = () => {
                   my: 2.5,
                   ml: 1,
                   backgroundColor: "#00D186",
-                  color: "black",
                   display: "block",
                   fontSize: { xs: "0.9rem", sm: "1.1rem" },
                   fontWeight: 600,

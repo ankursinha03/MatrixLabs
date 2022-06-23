@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import rocket from "../../assets/rocket.png";
 import sheild from "../../assets/sheild.png";
 import gears from "../../assets/gears.png";
+import styles from "./Growth.module.css";
 
 const Growth = () => {
   return (
@@ -41,8 +42,8 @@ const Growth = () => {
           <Box>
             <Typography
               variant="h6"
+              className={styles.primaryText}
               sx={{
-                color: "white",
                 fontFamily: "Montserrat",
                 fontSize: { xs: "1.8rem", sm: "2.2rem" },
                 fontWeight: 700,
@@ -57,13 +58,14 @@ const Growth = () => {
               }}
             >
               <Box
+                className={styles.divBorder}
                 sx={{
                   display: "flex",
                   flexDirection: "column",
                   width: "100%",
                   alignItems: "flex-start",
                   pr: "1rem",
-                  borderRight: "1px solid #ffffff80",
+                  borderRight: "1px solid",
                 }}
               >
                 <Box
@@ -77,8 +79,8 @@ const Growth = () => {
                   }}
                 />
                 <Typography
+                  className={styles.secondaryText}
                   sx={{
-                    color: "white",
                     fontWeight: 600,
                     fontSize: { xs: "1.2rem", sm: "1.4rem" },
                     mt: "auto",
@@ -107,8 +109,8 @@ const Growth = () => {
                   }}
                 />
                 <Typography
+                  className={styles.secondaryText}
                   sx={{
-                    color: "white",
                     fontWeight: 600,
                     fontSize: { xs: "1.2rem", sm: "1.4rem" },
                   }}
@@ -117,7 +119,10 @@ const Growth = () => {
                 </Typography>
               </Box>
             </Box>
-            <Typography sx={{ color: "white", fontSize: "1.1rem" }}>
+            <Typography
+              className={styles.primaryText}
+              sx={{ fontSize: "1.1rem" }}
+            >
               Excel your business with cutting-edge blockchain technology by
               adopting to our services. We believe in 100% customer satisfaction
               and provide industry leading solutions.

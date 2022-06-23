@@ -22,6 +22,7 @@ const HowWeDevelop = () => {
       >
         <Typography
           variant="h4"
+          className={styles.primaryText}
           sx={{
             fontFamily: "Montserrat",
             fontSize: { xs: "1.8rem", sm: "2.2rem" },
@@ -55,7 +56,7 @@ const HowWeDevelop = () => {
             sx={{
               height: "auto",
               width: "100%",
-              maxWidth: { xs: "300px", md: "250px" },
+              maxWidth: { xs: "225px", md: "250px" },
               mx: "auto",
             }}
             component="img"
@@ -63,10 +64,10 @@ const HowWeDevelop = () => {
             src={uidesign}
           ></Box>
           <Typography
+            className={styles.primaryText}
             variant="h6"
             sx={{
               fontFamily: "Montserrat",
-              color: "white",
               fontWeight: 600,
               textAlign: "center",
               fontSize: { xs: "1.2rem", sm: "1.4rem" },
@@ -76,6 +77,7 @@ const HowWeDevelop = () => {
           </Typography>
         </Box>
         <Box
+          className={styles.circleArrow}
           sx={{
             height: { xs: "50px", md: "70px" },
             width: "100%",
@@ -92,7 +94,7 @@ const HowWeDevelop = () => {
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "300px", md: "250px" },
+            maxWidth: { xs: "240px", md: "250px" },
             mx: "auto",
             display: "flex",
             flexDirection: "column",
@@ -102,7 +104,7 @@ const HowWeDevelop = () => {
             sx={{
               height: "auto",
               width: "100%",
-              maxWidth: { xs: "300px", md: "250px" },
+              maxWidth: { xs: "240px", md: "250px" },
               mx: "auto",
             }}
             component="img"
@@ -111,9 +113,9 @@ const HowWeDevelop = () => {
           ></Box>
           <Typography
             variant="h6"
+            className={styles.primaryText}
             sx={{
               fontFamily: "Montserrat",
-              color: "white",
               fontWeight: 600,
               textAlign: "center",
               fontSize: { xs: "1.2rem", sm: "1.4rem" },
@@ -139,7 +141,7 @@ const HowWeDevelop = () => {
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "300px", md: "250px" },
+            maxWidth: { xs: "225x", md: "250px" },
             mx: "auto",
             display: "flex",
             flexDirection: "column",
@@ -149,7 +151,7 @@ const HowWeDevelop = () => {
             sx={{
               height: "auto",
               width: "100%",
-              maxWidth: { xs: "300px", md: "250px" },
+              maxWidth: { xs: "225px", md: "250px" },
               mx: "auto",
             }}
             component="img"
@@ -158,9 +160,9 @@ const HowWeDevelop = () => {
           ></Box>
           <Typography
             variant="h6"
+            className={styles.primaryText}
             sx={{
               fontFamily: "Montserrat",
-              color: "white",
               fontWeight: 600,
               textAlign: "center",
               fontSize: { xs: "1.2rem", sm: "1.4rem" },

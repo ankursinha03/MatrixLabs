@@ -35,13 +35,13 @@ const ServicesProvided = () => {
     >
       <span id="services" />
       <Box
+        className={styles.primaryText}
         sx={{
           width: "100%",
           height: "auto",
           my: 3,
           mx: 3,
           px: { xs: "0rem", sm: "3rem" },
-          color: "white",
         }}
       >
         <Typography
@@ -61,7 +61,6 @@ const ServicesProvided = () => {
             fontFamily: "Montserrat",
             fontWeight: 700,
             fontSize: { xs: "2.5rem", sm: "3rem" },
-            color: "transparent",
           }}
         >
           MATRIX LABS
@@ -92,7 +91,6 @@ const ServicesProvided = () => {
                 flexWrap: { xs: "wrap", sm: "nowrap" },
                 justifyContent: "flex-start",
                 alignItems: "center",
-                backgroundColor: "#3c3c3c80",
                 borderRadius: "20px",
                 px: { xs: 2, sm: 3 },
                 py: { xs: 2 },
@@ -100,6 +98,7 @@ const ServicesProvided = () => {
               }}
             >
               <Box
+                className={styles.image}
                 sx={{
                   height: "auto",
                   width: "100%",
@@ -112,11 +111,11 @@ const ServicesProvided = () => {
               />
               <Typography
                 variant="h6"
+                className={styles.primaryText}
                 sx={{
                   fontFamily: "Montserrat",
                   fontWeight: 700,
                   fontSize: { xs: "1rem", sm: "1.4rem" },
-                  color: "#ffffff",
                   textAlign: "left",
                   width: "100%",
                   mt: 4,
@@ -126,11 +125,11 @@ const ServicesProvided = () => {
               </Typography>
               <Typography
                 variant="h6"
+                className={styles.secondaryText}
                 sx={{
                   fontFamily: "Montserrat",
                   fontWeight: 500,
                   fontSize: { xs: "0.8rem", sm: "1.1rem" },
-                  color: "#ffffffcc",
                   mt: 1,
                 }}
               >

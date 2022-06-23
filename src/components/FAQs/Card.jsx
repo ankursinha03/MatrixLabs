@@ -3,6 +3,7 @@ import Collapse from "@mui/material/Collapse";
 import Typography from "@mui/material/Typography";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { useState } from "react";
+import styles from "./FAQs.module.css";
 
 export default function MyCard({ data }) {
   const [expand, setExpand] = useState();
@@ -10,6 +11,7 @@ export default function MyCard({ data }) {
   return (
     <Box
       key={String(Math.random())}
+      className={styles.card}
       sx={{
         height: "max-content",
         width: "100%",
@@ -19,7 +21,6 @@ export default function MyCard({ data }) {
         flexDirection: "column",
         flexWrap: { xs: "wrap", sm: "nowrap" },
         justifyContent: "space-around",
-        backgroundColor: "#3c3c3c80",
         borderRadius: "3px",
         p: { xs: "auto", sm: 2.5 },
         py: { xs: 2 },
@@ -46,11 +47,11 @@ export default function MyCard({ data }) {
         >
           <Typography
             variant="h6"
+            className={styles.primaryText}
             sx={{
               fontFamily: "Montserrat",
               fontWeight: 500,
               fontSize: { xs: "1.0rem", sm: "1.1rem" },
-              color: "white",
               whiteSpace: expand ? "normal" : "nowrap",
               textOverflow: "ellipsis",
               overflow: "hidden",
@@ -68,10 +69,10 @@ export default function MyCard({ data }) {
         <Collapse in={expand}>
           <Typography
             variant="h6"
+            className={styles.secondaryText}
             sx={{
               fontFamily: "Poppins",
               fontWeight: 500,
-              color: "#c2c2c2",
               fontSize: { xs: "0.8rem", sm: "0.95rem" },
               ml: "8px",
               mt: 1,

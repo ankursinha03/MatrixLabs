@@ -39,13 +39,13 @@ const FAQs = () => {
     >
       <span id="team" />
       <Box
+        className={styles.primaryText}
         sx={{
           height: "auto",
           width: "100%",
           my: 3,
           mx: 3,
           px: { xs: "0rem", sm: "3rem" },
-          color: "white",
         }}
       >
         <Typography
@@ -65,7 +65,6 @@ const FAQs = () => {
             fontFamily: "Montserrat",
             fontWeight: 700,
             fontSize: { xs: "2.5rem", sm: "3rem" },
-            color: "transparent",
           }}
         >
           QUESTIONS
@@ -91,7 +90,7 @@ const FAQs = () => {
           }}
         >
           {cardData.map((cardData) => {
-            return <Card data={cardData} />;
+            return <Card key={cardData.question} data={cardData} />;
           })}
         </Box>
         <Box
@@ -107,9 +106,9 @@ const FAQs = () => {
         >
           <Typography
             variant="h4"
+            className={styles.primaryText}
             sx={{
               fontFamily: "Montserrat",
-              color: "white",
               fontSize: { xs: "1.8rem", sm: "2.2rem" },
               fontWeight: 700,
               textAlign: "left",
@@ -120,10 +119,10 @@ const FAQs = () => {
             CONTACT US 👇
           </Typography>
           <Typography
+            className={styles.secondaryText}
             sx={{
               fontWeight: 500,
               fontSize: { xs: "1rem", sm: "1.2rem" },
-              color: "white",
               mt: "2rem",
             }}
           >
@@ -138,6 +137,7 @@ const FAQs = () => {
             }}
           >
             <Box
+              className={styles.image}
               sx={{
                 display: "flex",
                 width: "40px",
@@ -148,6 +148,7 @@ const FAQs = () => {
               alt="instagram"
             ></Box>
             <Box
+              className={styles.image}
               sx={{
                 display: "flex",
                 width: "40px",
@@ -158,6 +159,7 @@ const FAQs = () => {
               alt="facebook"
             ></Box>
             <Box
+              className={styles.image}
               sx={{
                 display: "flex",
                 width: "40px",

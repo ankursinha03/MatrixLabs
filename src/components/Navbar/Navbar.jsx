@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -9,10 +9,13 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import Switch from "@mui/material/Switch";
 import Logo from "../../assets/logo.png";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [light, setLight] = React.useState(false);
 
   const pages = ["about", "services", "projects", "contact"];
 
@@ -23,6 +26,32 @@ const Navbar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const handleDarkMode = () => {
+    if (light) {
+      setLight(false);
+      document.querySelector("body").classList.remove("light");
+      localStorage.setItem("theme", "dark");
+    } else {
+      setLight(true);
+      document.querySelector("body").classList.add("light");
+      localStorage.setItem("theme", "light");
+    }
+  };
+
+  React.useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light") {
+      setLight(true);
+      document.querySelector("body").classList.add("light");
+    } else if (savedTheme === "dark") {
+      setLight(false);
+      document.querySelector("body").classList.remove("light");
+    } else {
+      localStorage.setItem("theme", "dark");
+    }
+  }, []);
+
   return (
     <AppBar position="static" sx={{ backgroundColor: "transparent" }}>
       <Container maxWidth="xl">
@@ -38,6 +67,7 @@ const Navbar = () => {
             src={Logo}
           />
           <Typography
+            className={styles.navText}
             variant="h6"
             noWrap
             component="a"
@@ -48,7 +78,6 @@ const Navbar = () => {
               fontFamily: "Montserrat",
               fontWeight: 600,
               letterSpacing: ".3rem",
-              color: "inherit",
               fontSize: { xs: "1rem", sm: "1.3rem", m: "1.5rem" },
               textDecoration: "none",
             }}
@@ -64,9 +93,9 @@ const Navbar = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
             >
               <MenuIcon
+                className={styles.navText}
                 sx={{
                   fontSize: { xs: "2rem", sm: "2.3rem" },
                 }}
@@ -78,7 +107,7 @@ const Navbar = () => {
                 style: {
                   width: "100%",
                   maxWidth: "100%",
-                  background: "#000000",
+                  background: light ? "#f5f5f5" : "#000000",
                 },
               }}
               marginThreshold={0}
@@ -101,9 +130,10 @@ const Navbar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography
+                    className={styles.navText}
                     component="a"
                     href={`#${page}`}
-                    sx={{ color: "white", textDecoration: "none" }}
+                    sx={{ textDecoration: "none" }}
                     textAlign="center"
                   >
                     {page.toUpperCase()}
@@ -111,26 +141,28 @@ const Navbar = () => {
                 </MenuItem>
               ))}
               <MenuItem onClick={handleCloseNavMenu}>
-                <Typography sx={{ color: "white" }} textAlign="center">
-                  DAPP
-                </Typography>
+                <Typography textAlign="center">DAPP</Typography>
+              </MenuItem>
+              <MenuItem>
+                <Switch checked={light} onChange={handleDarkMode} />
               </MenuItem>
             </Menu>
           </Box>
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
+              alignItems: "center",
             }}
           >
             {pages.map((page) => (
               <Button
+                className={styles.navText}
                 component="a"
                 href={`#${page}`}
                 key={page}
                 sx={{
                   my: 2,
                   mx: 1,
-                  color: "white",
                   display: "block",
                   fontFamily: "Montserrat",
                   fontSize: "1rem",
@@ -144,7 +176,6 @@ const Navbar = () => {
                 my: 2.5,
                 mx: 1,
                 backgroundColor: "#00D186",
-                color: "black",
                 fontFamily: "Montserrat",
                 display: "block",
                 fontSize: "1rem",
@@ -156,6 +187,7 @@ const Navbar = () => {
             >
               DAPP
             </Button>
+            <Switch checked={light} onChange={handleDarkMode} />
           </Box>
         </Toolbar>
       </Container>

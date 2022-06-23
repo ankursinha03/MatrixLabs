@@ -2,7 +2,15 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url("../../assets/background-lines.png");
+  background: var(--landing-bg);
+}
+
+.invertButton {
+  color: var(--primary-font-color) !important;
+}
+
+.landingText {
+  color: var(--primary-font-color);
 }
 
 @keyframes spin {
