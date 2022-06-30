@@ -119,6 +119,9 @@ const Landing = () => {
                   width: "100%",
                   padding: { xs: "1px 0.5rem", sm: "3px 1rem" },
                 }}
+                onClick={() => {
+                  window.location.href = "#about";
+                }}
               >
                 KNOW MORE
               </Button>
