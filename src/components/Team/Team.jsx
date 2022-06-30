@@ -39,6 +39,7 @@ const Team = () => {
         }}
       >
         <Typography
+          className={styles.primaryText}
           variant="h4"
           sx={{
             fontFamily: "Montserrat",
