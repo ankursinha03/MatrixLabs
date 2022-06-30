@@ -11,23 +11,26 @@ const FAQs = () => {
   const cardData = [
     {
       question: "Do you provide custom smart contracts?",
-      answer: "Yes, we do.",
+      answer:
+        "Yes, we do provide Custom Smart Contracts according to the client’s needs.",
     },
     {
       question: "How long is the after sales service?",
-      answer: "7 days after launch.",
+      answer:
+        " Customer satisfaction is our top priority. So we provide upto 7 days of service from the date of delivery.",
     },
     {
       question: "Do you provide hosting as well?",
-      answer: "Yes, we do.",
+      answer: "Yes, we do provide hosting solutions if the clients need it.",
     },
     {
       question: "Do you provide presale support?",
-      answer: "Yes, we do.",
+      answer: "Yes, will be providing presale support if the clients need it.",
     },
     {
       question: "Do you take upfront payment?",
-      answer: "Yes, we take 50% payment upfront.",
+      answer:
+        "Yes, we will be taking 50% payment upfront before we start working on any order.",
     },
   ];
   return (
