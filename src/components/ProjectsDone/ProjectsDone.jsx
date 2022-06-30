@@ -69,7 +69,7 @@ const ProjectsDone = () => {
         }}
       >
         <Box
-          className={styles.card}
+          className={`${styles.card} ${styles.projectNav}`}
           sx={{
             width: { xs: "100%", sm: "90%", md: "94%" },
             display: "flex",

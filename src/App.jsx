@@ -1,4 +1,5 @@
 import Landing from "./components/Landing/Landing";
+import Navbar from "./components/Navbar/Navbar";
 import WhyUs from "./components/WhyUs/WhyUs";
 import Ideas from "./components/Ideas/Ideas";
 import ServicesProvided from "./components/ServicesProvided/ServicesProvided";
@@ -14,6 +15,7 @@ import styles from "./App.module.css";
 function App() {
   return (
     <div className={styles.App}>
+      <Navbar />
       <Landing />
       <div className={styles.circleBg}>
         <div className={styles.greyMountainWrapper}>

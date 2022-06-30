@@ -54,7 +54,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "transparent" }}>
+    <AppBar
+      position="sticky"
+      sx={{
+        backgroundColor: "transparent",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ display: "flex" }}>
           <Box

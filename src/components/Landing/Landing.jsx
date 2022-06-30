@@ -2,7 +2,6 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import Navbar from "../Navbar/Navbar";
 import Button from "@mui/material/Button";
 // import earth from "../../assets/earth.png";
 import coins from "../../assets/coins.png";
@@ -21,7 +20,6 @@ const Landing = () => {
 
   return (
     <div className={styles.landing}>
-      <Navbar />
       <Container
         maxWidth="xl"
         sx={{
