@@ -66,6 +66,10 @@ body.light {
   --div-border: #00000080;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   color: var(--invert-font-color) !important;
 }

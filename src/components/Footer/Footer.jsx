@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import Box from "@mui/system/Box";
 import Typography from "@mui/material/Typography";
 import Logo from "../../assets/logo.png";
-import { Instagram, Facebook, Twitter } from "@mui/icons-material";
+import { Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -76,9 +76,31 @@ const Footer = () => {
               mt: 2.5,
             }}
           >
-            <Instagram />
-            <Facebook sx={{ ml: 2 }} />
-            <Twitter sx={{ ml: 2 }} />
+            <a
+              className={styles.link}
+              href="https://www.instagram.com/the_matrix_labs/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Instagram />
+            </a>
+            <a
+              className={styles.link}
+              href="https://www.linkedin.com/company/the-matrix-labs/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedIn sx={{ ml: 2 }} />
+            </a>
+            <a
+              className={styles.link}
+              href="https://twitter.com/TheMatrixLabs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <Twitter sx={{ ml: 2 }} />
+            </a>
           </Box>
         </Box>
         <Box flexGrow={1} />

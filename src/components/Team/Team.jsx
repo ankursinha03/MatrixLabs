@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import brickmatrix from "../../assets/team/brickmatrix.jpg";
 import codex from "../../assets/team/codex.jpg";
+import brix from "../../assets/team/brix.jpg";
 import styles from "./Team.module.css";
 
 const Team = () => {
@@ -14,12 +15,21 @@ const Team = () => {
       experience: "LISTED ON PINKSALE & GEMPAD",
       name: "BRICK MATRIX",
       position: "Contract and Web3 Dev",
+      message: "https://t.me/brick_matrix",
     },
     {
       image: codex,
       experience: "2 YRS OF EXPERINCE IN DESIGN",
       name: "CODEX",
       position: "DAPP and Web Dev",
+      message: "https://t.me/Cod3xOp",
+    },
+    {
+      image: brix,
+      experience: "ECSTATIC ROOKIE",
+      name: "BRIX",
+      position: "Marketing and Management",
+      message: "https://t.me/iiTzBrix",
     },
   ];
   return (
@@ -154,20 +164,22 @@ const Team = () => {
                   mt: 2,
                 }}
               >
-                <Button
-                  className={styles.borderAndText}
-                  sx={{
-                    backgroundColor: "transparent",
-                    border: "1px solid",
-                    color: "#00D186",
-                    fontSize: "0.7rem",
-                    fontFamily: "Nunito Sans",
-                    borderRadius: "7px",
-                    p: "0.6rem 1.1rem",
-                  }}
-                >
-                  Message
-                </Button>
+                <a href={data.message} target="_blank" rel="noreferrer">
+                  <Button
+                    className={styles.borderAndText}
+                    sx={{
+                      backgroundColor: "transparent",
+                      border: "1px solid",
+                      color: "#00D186",
+                      fontSize: "0.7rem",
+                      fontFamily: "Nunito Sans",
+                      borderRadius: "7px",
+                      p: "0.6rem 1.1rem",
+                    }}
+                  >
+                    Message
+                  </Button>
+                </a>
                 <Button
                   className={styles.connectButton}
                   sx={{

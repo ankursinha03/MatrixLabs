@@ -9,7 +9,8 @@ import qingLongInu from "../../assets/screenshots/qingLongInu.png";
 import metaMarketingStaking from "../../assets/screenshots/metaMarketingStaking.png";
 import rocketGlobal from "../../assets/screenshots/rocketGlobal.png";
 import luckyMetaverse from "../../assets/screenshots/luckyMetaverse.png";
-import metaLoop from "../../assets/screenshots/metaLoop.png";
+import metaLoopSpecial from "../../assets/screenshots/metaLoopSpecial.png";
+import lmetaSpecial from "../../assets/screenshots/lmetaSpecial.png";
 
 export const navData = {
   "NFT Minting Websites": [
@@ -76,10 +77,17 @@ export const navData = {
       image: luckyMetaverse,
       link: "https://lmeta.netlify.app/",
     },
+  ],
+  "Special dApps": [
     {
       header: "Meta Loop",
-      image: metaLoop,
+      image: metaLoopSpecial,
       link: "https://meta-loop.netlify.app/",
+    },
+    {
+      header: "LMeta",
+      image: lmetaSpecial,
+      link: "https://lmeta.netlify.app/",
     },
   ],
 };

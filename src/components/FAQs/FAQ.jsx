@@ -4,9 +4,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Card from "./Card";
-import instagram from "../../assets/instagram.png";
-import facebook from "../../assets/facebook.png";
-import twitter from "../../assets/twitter.png";
+import { Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import styles from "./FAQs.module.css";
 
 const FAQs = () => {
@@ -138,60 +136,50 @@ const FAQs = () => {
               gap: { xs: "0.5rem", sm: "1rem" },
             }}
           >
-            <Box
-              className={styles.image}
-              sx={{
-                display: "flex",
-                width: "40px",
-                height: "40px",
-              }}
-              component="img"
-              src={instagram}
-              alt="instagram"
-            ></Box>
-            <Box
-              className={styles.image}
-              sx={{
-                display: "flex",
-                width: "40px",
-                height: "40px",
-              }}
-              component="img"
-              src={facebook}
-              alt="facebook"
-            ></Box>
-            <Box
-              className={styles.image}
-              sx={{
-                display: "flex",
-                width: "40px",
-                height: "40px",
-              }}
-              component="img"
-              src={twitter}
-              alt="twitter"
-            ></Box>
+            <a
+              href="https://www.instagram.com/the_matrix_labs/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Instagram className={styles.image} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/the-matrix-labs/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedIn className={styles.image} />
+            </a>
+            <a
+              href="https://twitter.com/TheMatrixLabs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Twitter className={styles.image} />
+            </a>
           </Box>
-          <Button
-            sx={{
-              mt: { xs: "2rem", md: "3rem" },
-              ml: 1,
-              backgroundColor: "#00D186",
-              color: "black",
-              display: "block",
-              fontSize: { xs: "0.9rem", sm: "1.1rem" },
-              fontWeight: 600,
-              width: "100%",
-              maxWidth: "350px",
-              borderRadius: "50px",
-              padding: { xs: "1px 0.5rem", sm: "3px 1rem" },
-              "&:hover": {
+          <a href="https://t.me/brick_matrix" target="_blank" rel="noreferrer">
+            <Button
+              sx={{
+                mt: { xs: "2rem", md: "3rem" },
+                ml: 1,
                 backgroundColor: "#00D186",
-              },
-            }}
-          >
-            CONTACT US
-          </Button>
+                color: "black",
+                display: "block",
+                fontSize: { xs: "0.9rem", sm: "1.1rem" },
+                fontWeight: 600,
+                width: "100%",
+                maxWidth: "350px",
+                borderRadius: "50px",
+                padding: { xs: "1px 0.5rem", sm: "3px 1rem" },
+                "&:hover": {
+                  backgroundColor: "#00D186",
+                },
+              }}
+            >
+              CONTACT US
+            </Button>
+          </a>
         </Box>
       </Box>
     </Container>

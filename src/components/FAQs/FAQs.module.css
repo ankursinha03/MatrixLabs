@@ -18,4 +18,6 @@
 
 .image {
   filter: var(--img-filter-full);
+  color: white;
+  font-size: 40px !important;
 }
