@@ -4,7 +4,8 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import blockchain from "../../assets/blockchain.png";
 import maple from "../../assets/maple.png";
-import lightning from "../../assets/lightning.png";
+// import lightning from "../../assets/lightning.png";
+import lightning from "../../assets/lightning-light.png";
 import contract from "../../assets/contract.png";
 import styles from "./WhyUs.module.css";
 
@@ -133,6 +134,7 @@ const WhyUs = () => {
               }}
             >
               <Box
+                className={data.image === lightning ? styles.lightning : ""}
                 sx={{
                   height: "auto",
                   width: "100%",

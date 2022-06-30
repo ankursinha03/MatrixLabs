@@ -16,58 +16,70 @@ export const navData = {
     {
       header: "Quing Long Inu",
       image: qingLongInu,
+      link: "https://codexop.github.io/qinglong/",
     },
   ],
   Dashboards: [
     {
       header: "Amber Protocol Dashboard",
       image: amberProtocol,
+      link: "https://amberprotocol.github.io/amberprotocol/",
     },
     {
       header: "Cosmik Dashboard",
       image: cosmik,
+      link: "https://main--cosmicfinances.netlify.app/",
     },
     {
       header: "LMeta Dashboard",
       image: lMeta,
+      link: "https://lmeta.netlify.app/",
     },
     {
       header: "Meta Marketing Dashboard",
       image: metaMarketing,
+      link: "https://main--metamarketingdao.netlify.app/",
     },
     {
       header: "Safe Earn Dashboard",
       image: safeEarn,
+      link: "https://dashboard.safeearnfinance.net/",
     },
   ],
   "Staking Websites": [
     {
       header: "Meta Marketing Staking",
       image: metaMarketingStaking,
+      link: "https://main--metamarketingdao.netlify.app/",
     },
   ],
   Calculators: [
     {
       header: "Cosmik Calculator",
       image: cosmikCalculator,
+      link: "https://main--cosmicfinances.netlify.app/",
     },
     {
       header: "Safe Earn Calculator",
       image: safeEarnCalculator,
+      link: "https://dashboard.safeearnfinance.net/",
     },
   ],
   Websites: [
     {
       header: "Rocket Global",
       image: rocketGlobal,
+      link: "https://rckc-defi-staking.rocketglobal.io/",
     },
     {
       header: "Lucky Metaverse",
       image: luckyMetaverse,
+      link: "https://lmeta.netlify.app/",
     },
     {
       header: "Meta Loop",
       image: metaLoop,
+      link: "https://meta-loop.netlify.app/",
     },
   ],
 };

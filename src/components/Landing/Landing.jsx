@@ -4,7 +4,8 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Navbar from "../Navbar/Navbar";
 import Button from "@mui/material/Button";
-import earth from "../../assets/earth.png";
+// import earth from "../../assets/earth.png";
+import coins from "../../assets/coins.png";
 import TxtRotate from "../../scripts/TextRotate";
 import styles from "./Landing.module.css";
 
@@ -102,6 +103,7 @@ const Landing = () => {
                 display: "flex",
                 justifyContent: "space-between",
                 mt: 2,
+                mb: 4,
               }}
             >
               <Button
@@ -145,12 +147,13 @@ const Landing = () => {
           sx={{
             height: "auto",
             width: "100%",
-            maxWidth: { xs: "100%", md: "50%" },
+            maxWidth: { xs: "100%", md: "43%" },
             mx: "auto",
+            mr: 0,
           }}
           component="img"
-          alt="Earth"
-          src={earth}
+          alt="Coins"
+          src={coins}
         ></Box>
       </Container>
     </div>

@@ -121,7 +121,10 @@ const Growth = () => {
             </Box>
             <Typography
               className={styles.primaryText}
-              sx={{ fontSize: "1.1rem" }}
+              sx={{
+                fontSize: "1.1rem",
+                maxWidth: { xs: "95%", sm: "100%", md: "80%" },
+              }}
             >
               Excel your business with cutting-edge blockchain technology by
               adopting to our services. We believe in 100% customer satisfaction

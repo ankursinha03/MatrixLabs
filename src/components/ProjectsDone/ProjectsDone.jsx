@@ -201,17 +201,19 @@ const ProjectsDone = () => {
                         mx: 0.5,
                       }}
                     />
-                    <Box
-                      className={styles.image}
-                      component="img"
-                      src={globe}
-                      alt="globe"
-                      sx={{
-                        height: { xs: "23px", sm: "27px" },
-                        width: { xs: "23px", sm: "27px" },
-                        mx: 0.5,
-                      }}
-                    />
+                    <a href={card.link} target="_blank" rel="noreferrer">
+                      <Box
+                        className={styles.image}
+                        component="img"
+                        src={globe}
+                        alt="globe"
+                        sx={{
+                          height: { xs: "23px", sm: "27px" },
+                          width: { xs: "23px", sm: "27px" },
+                          mx: 0.5,
+                        }}
+                      />
+                    </a>
                   </Box>
                 </Box>
               </Box>

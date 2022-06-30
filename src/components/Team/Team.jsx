@@ -3,19 +3,20 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import avatar from "../../assets/avatar.png";
+import brickmatrix from "../../assets/team/brickmatrix.jpg";
+import codex from "../../assets/team/codex.jpg";
 import styles from "./Team.module.css";
 
 const Team = () => {
   const cardData = [
     {
-      image: avatar,
+      image: brickmatrix,
       experience: "LISTED ON PINKSALE & GEMPAD",
       name: "BRICK MATRIX",
       position: "Contract and Web3 Dev",
     },
     {
-      image: avatar,
+      image: codex,
       experience: "2 YRS OF EXPERINCE IN DESIGN",
       name: "CODEX",
       position: "DAPP and Web Dev",
@@ -101,6 +102,7 @@ const Team = () => {
                   width: "100%",
                   maxWidth: "75px",
                   mx: "auto",
+                  borderRadius: "50%",
                 }}
                 component="img"
                 alt={data.name}

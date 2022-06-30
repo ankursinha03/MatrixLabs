@@ -7,8 +7,8 @@ import { Instagram, Facebook, Twitter } from "@mui/icons-material";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
-  const footerColumn1Headers = ["Home", "Dashboard", "Earn", "Stake"];
-  const footerColumn2Headers = ["Track", "Calculator", "Send Krypt", "Docs"];
+  // const footerColumn1Headers = ["Home", "Dashboard", "Earn", "Stake"];
+  // const footerColumn2Headers = ["Track", "Calculator", "Send Krypt", "Docs"];
 
   return (
     <div className={styles.footer}>
@@ -68,8 +68,7 @@ const Footer = () => {
               mt: 2,
             }}
           >
-            We Are Creating A Ecosystem For Our KRYPT Community so we can impact
-            the lives of individividual In Positive Way
+            One stop destination for all Blockchain Solutions.
           </Typography>
           <Box
             sx={{
@@ -83,7 +82,7 @@ const Footer = () => {
           </Box>
         </Box>
         <Box flexGrow={1} />
-        <Box
+        {/* <Box
           sx={{
             height: "100%",
             width: { xs: "90%", sm: "100%" },
@@ -158,7 +157,7 @@ const Footer = () => {
               </Box>
             </Box>
           </Box>
-        </Box>
+        </Box> */}
       </Container>
     </div>
   );

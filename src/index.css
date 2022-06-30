@@ -34,6 +34,7 @@ body {
   --team-btn-bg: #00d186;
   --img-filter-light: none;
   --img-filter-full: none;
+  --img-darken-filter: brightness(0.5) contrast(1.6) saturate(0.4);
   --circle-bg: url("./assets/background-circle-design.png");
   --div-border: #ffffff80;
 }
@@ -60,6 +61,7 @@ body.light {
   --team-btn-bg: #585858;
   --img-filter-light: invert(50%);
   --img-filter-full: invert(100%);
+  --img-darken-filter: none;
   --circle-bg: none;
   --div-border: #00000080;
 }

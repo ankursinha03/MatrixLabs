@@ -13,21 +13,23 @@ const FAQs = () => {
   const cardData = [
     {
       question: "Do you provide custom smart contracts?",
-      answer: "Idk bro its just life",
+      answer: "Yes, we do.",
     },
     {
       question: "How long is the after sales service?",
-      answer:
-        "Idk bro its just life but this is also a very very very long answer",
+      answer: "7 days after launch.",
     },
     {
       question: "Do you provide hosting as well?",
-      answer:
-        "Idk bro its just life but this is also a very very very long answer",
+      answer: "Yes, we do.",
     },
     {
       question: "Do you provide presale support?",
-      answer: "Idk bro its just life",
+      answer: "Yes, we do.",
+    },
+    {
+      question: "Do you take upfront payment?",
+      answer: "Yes, we take 50% payment upfront.",
     },
   ];
   return (
@@ -37,7 +39,7 @@ const FAQs = () => {
         my: "5rem",
       }}
     >
-      <span id="team" />
+      <span id="contact" />
       <Box
         className={styles.primaryText}
         sx={{
