@@ -30,7 +30,9 @@ body {
   --secondary-font-color: #ffffffcc;
   --border-font-fill: transparent;
   --border-font-stroke: #0ed8a7;
+  --nav-bg: linear-gradient(to bottom, #000000ff, #00000044);
   --card-bg-transparent: #3c3c3c80;
+  --modal-bg: #151515e9;
   --card-bg-non-transparent: #3c3c3ca6;
   --team-btn-bg: #00d186;
   --img-filter-light: none;
@@ -57,8 +59,14 @@ body.light {
   --secondary-font-color: #000000cc;
   --border-font-fill: #00d186;
   --border-font-stroke: transparent;
+  --nav-bg: linear-gradient(
+    to bottom,
+    rgba(222, 235, 255, 0.76) 1.82%,
+    rgba(184, 198, 219, 0.65) 99.55%
+  );
   --card-bg-non-transparent: #e8e8e8;
   --card-bg-transparent: #e8e8e8;
+  --modal-bg: #e8e8e8;
   --team-btn-bg: #585858;
   --img-filter-light: invert(50%);
   --img-filter-full: invert(100%);

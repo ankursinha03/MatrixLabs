@@ -11,12 +11,14 @@ import NightsStayIcon from "@mui/icons-material/NightsStay";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import Modal from "@mui/material/Modal";
 import Logo from "../../assets/logo.png";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [light, setLight] = React.useState(false);
+  const [openModal, setOpenModal] = React.useState(false);
 
   const pages = ["about", "services", "projects", "contact"];
 
@@ -27,6 +29,8 @@ const Navbar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const toggleModal = (value) => setOpenModal(value);
 
   const handleDarkMode = () => {
     if (light) {
@@ -55,6 +59,7 @@ const Navbar = () => {
 
   return (
     <AppBar
+      className={styles.navBar}
       position="sticky"
       sx={{
         backgroundColor: "transparent",
@@ -66,7 +71,7 @@ const Navbar = () => {
             sx={{
               height: "auto",
               width: "100%",
-              maxWidth: { xs: 80 },
+              maxWidth: { xs: 60, sm: 80 },
             }}
             component="img"
             alt="Logo"
@@ -83,7 +88,7 @@ const Navbar = () => {
               display: { xs: "flex" },
               fontFamily: "Montserrat",
               fontWeight: 600,
-              letterSpacing: ".3rem",
+              letterSpacing: { xs: ".1rem", sm: ".3rem" },
               fontSize: { xs: "1rem", sm: "1.3rem", m: "1.5rem" },
               textDecoration: "none",
             }}
@@ -146,7 +151,12 @@ const Navbar = () => {
                   </Typography>
                 </MenuItem>
               ))}
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem
+                onClick={() => {
+                  handleCloseNavMenu();
+                  toggleModal(true);
+                }}
+              >
                 <Typography className={styles.navText} textAlign="center">
                   DAPP
                 </Typography>
@@ -210,6 +220,7 @@ const Navbar = () => {
                   backgroundColor: "#00D186",
                 },
               }}
+              onClick={() => setOpenModal(true)}
             >
               DAPP
             </Button>
@@ -235,6 +246,28 @@ const Navbar = () => {
           </Box>
         </Toolbar>
       </Container>
+      <Modal
+        open={openModal}
+        onClose={() => {
+          setOpenModal(false);
+        }}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box className={styles.dappModal}>
+          <Typography
+            className={styles.navText}
+            variant="h3"
+            component="h2"
+            sx={{
+              fontFamily: "Montserrat",
+              fontWeight: 600,
+            }}
+          >
+            Coming Soon
+          </Typography>
+        </Box>
+      </Modal>
     </AppBar>
   );
 };
