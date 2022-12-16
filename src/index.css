@@ -1,7 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/montserrat");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.cdnfonts.com/css/nunito-sans");
-
 html,
 body,
 #root {
@@ -23,8 +22,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000000;
-  --landing-bg: url("./assets/background-lines.png");
-  --secondary-bg: url("./assets/linebg.png");
   --primary-font-color: #ffffff;
   --invert-font-color: #000000;
   --secondary-font-color: #ffffffcc;
@@ -38,7 +35,6 @@ body {
   --img-filter-light: none;
   --img-filter-full: none;
   --img-darken-filter: brightness(0.5) contrast(1.6) saturate(0.4);
-  --circle-bg: url("./assets/background-circle-design.png");
   --div-border: #ffffff80;
 }
 
@@ -79,9 +75,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  color: var(--invert-font-color) !important;
-}
 
 body::-webkit-scrollbar {
   width: 10px;

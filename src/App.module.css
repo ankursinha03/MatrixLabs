@@ -21,17 +21,8 @@
   border-radius: 3px;
 }
 
-.circleBg {
-  background-image: var(--circle-bg);
-  background-size: 100%;
-}
-
-.greyMountainWrapper {
-  background-image: url("/src/assets/grey-mountains.png");
-  background-size: cover;
-}
-
-.lineBgWrapper {
-  background-image: var(--secondary-bg);
-  background-size: cover;
+.col-centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
 }

@@ -6,21 +6,17 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import NightsStayIcon from "@mui/icons-material/NightsStay";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import Modal from "@mui/material/Modal";
 import Logo from "../../assets/logo.png";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [light, setLight] = React.useState(false);
   const [openModal, setOpenModal] = React.useState(false);
 
-  const pages = ["about", "services", "projects", "contact"];
+  const pages = ["Services", "Projects", "About"];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -32,37 +28,14 @@ const Navbar = () => {
 
   const toggleModal = (value) => setOpenModal(value);
 
-  const handleDarkMode = () => {
-    if (light) {
-      setLight(false);
-      document.querySelector("body").classList.remove("light");
-      localStorage.setItem("theme", "dark");
-    } else {
-      setLight(true);
-      document.querySelector("body").classList.add("light");
-      localStorage.setItem("theme", "light");
-    }
-  };
-
-  React.useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light") {
-      setLight(true);
-      document.querySelector("body").classList.add("light");
-    } else if (savedTheme === "dark") {
-      setLight(false);
-      document.querySelector("body").classList.remove("light");
-    } else {
-      localStorage.setItem("theme", "dark");
-    }
-  }, []);
 
   return (
     <AppBar
       className={styles.navBar}
       position="sticky"
       sx={{
-        backgroundColor: "transparent",
+        backgroundColor: "black",
+        borderBottom: "1px solid white"
       }}
     >
       <Container maxWidth="xl">
@@ -118,7 +91,6 @@ const Navbar = () => {
                 style: {
                   width: "100%",
                   maxWidth: "100%",
-                  background: light ? "#f5f5f5" : "#000000",
                 },
               }}
               marginThreshold={0}
@@ -144,10 +116,10 @@ const Navbar = () => {
                     className={styles.navText}
                     component="a"
                     href={`#${page}`}
-                    sx={{ textDecoration: "none" }}
+                    sx={{ textDecoration: "none", textTransform: "none" }}
                     textAlign="center"
                   >
-                    {page.toUpperCase()}
+                    {page}
                   </Typography>
                 </MenuItem>
               ))}
@@ -158,29 +130,8 @@ const Navbar = () => {
                 }}
               >
                 <Typography className={styles.navText} textAlign="center">
-                  DAPP
+                  Get in touch
                 </Typography>
-              </MenuItem>
-              <MenuItem>
-                {light ? (
-                  <WbSunnyIcon
-                    sx={{
-                      color: "#000000cc",
-                      mx: 1,
-                      cursor: "pointer",
-                    }}
-                    onClick={handleDarkMode}
-                  />
-                ) : (
-                  <NightsStayIcon
-                    sx={{
-                      color: "#ffffffcc",
-                      mx: 1,
-                      cursor: "pointer",
-                    }}
-                    onClick={handleDarkMode}
-                  />
-                )}
               </MenuItem>
             </Menu>
           </Box>
@@ -200,6 +151,7 @@ const Navbar = () => {
                   my: 2,
                   mx: 1,
                   display: "block",
+                  textTransform: "none",
                   fontFamily: "Montserrat",
                   fontSize: "1rem",
                 }}
@@ -213,61 +165,22 @@ const Navbar = () => {
                 mx: 1,
                 backgroundColor: "#00D186",
                 fontFamily: "Montserrat",
+                textTransform: "none",
                 display: "block",
                 fontSize: "1rem",
+                fontWeight: 600,
                 padding: "0px 1rem",
+                color: "white",
                 "&:hover": {
                   backgroundColor: "#00D186",
                 },
               }}
-              onClick={() => setOpenModal(true)}
             >
-              DAPP
+              Get in touch
             </Button>
-            {light ? (
-              <WbSunnyIcon
-                sx={{
-                  color: "#000000cc",
-                  mx: 1,
-                  cursor: "pointer",
-                }}
-                onClick={handleDarkMode}
-              />
-            ) : (
-              <NightsStayIcon
-                sx={{
-                  color: "#ffffffcc",
-                  mx: 1,
-                  cursor: "pointer",
-                }}
-                onClick={handleDarkMode}
-              />
-            )}
           </Box>
         </Toolbar>
       </Container>
-      <Modal
-        open={openModal}
-        onClose={() => {
-          setOpenModal(false);
-        }}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box className={styles.dappModal}>
-          <Typography
-            className={styles.navText}
-            variant="h3"
-            component="h2"
-            sx={{
-              fontFamily: "Montserrat",
-              fontWeight: 600,
-            }}
-          >
-            Coming Soon
-          </Typography>
-        </Box>
-      </Modal>
     </AppBar>
   );
 };
