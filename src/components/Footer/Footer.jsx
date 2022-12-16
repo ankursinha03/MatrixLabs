@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import Box from "@mui/system/Box";
 import Typography from "@mui/material/Typography";
 import Logo from "../../assets/logo.png";
-import { Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import { Instagram, LinkedIn, Twitter, Telegram, GitHub } from "@mui/icons-material";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -101,85 +101,34 @@ const Footer = () => {
               {" "}
               <Twitter sx={{ ml: 2 }} />
             </a>
+            <a
+              className={styles.link}
+              href="https://twitter.com/TheMatrixLabs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <GitHub sx={{ ml: 2 }} />
+            </a>
+            <a
+              className={styles.link}
+              href="https://twitter.com/TheMatrixLabs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <Telegram sx={{ ml: 2 }} />
+            </a>
           </Box>
         </Box>
-        <Box flexGrow={1} />
-        {/* <Box
-          sx={{
-            height: "100%",
-            width: { xs: "90%", sm: "100%" },
-            maxWidth: { xs: "400px", md: "40%" },
-            px: { xs: "2rem", sm: "3rem" },
-            mb: { xs: "2rem", sm: "none" },
-            color: "white",
-            display: "flex",
-            justifyContent: { xs: "flex-start", sm: "center" },
-            alignItems: "center",
-          }}
-        >
-          <Box>
-            <Typography
-              variant="h4"
-              sx={{
-                fontSize: { xs: "1rem", sm: "1.3rem", m: "1.5rem" },
-                fontWeight: 700,
-                fontFamily: "Montserrat",
-                color: "#0ed8a7",
-                mt: 4,
-              }}
-            >
-              IMPORTANT LINKS
-            </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                gap: "1rem",
-              }}
-            >
-              <Box
-                flexGrow={1}
-                sx={{ display: "flex", flexDirection: "column" }}
-              >
-                {footerColumn1Headers.map((header) => {
-                  return (
-                    <Typography
-                      key={header}
-                      variant="p"
-                      sx={{
-                        mt: 3,
-                        fontWeight: 500,
-                        fontFamily: "Poppins",
-                      }}
-                    >
-                      {header}
-                    </Typography>
-                  );
-                })}
-              </Box>
-              <Box
-                flexGrow={1}
-                sx={{ display: "flex", flexDirection: "column" }}
-              >
-                {footerColumn2Headers.map((header) => {
-                  return (
-                    <Typography
-                      key={header}
-                      variant="p"
-                      sx={{
-                        mt: 3,
-                        fontWeight: 500,
-                        fontFamily: "Poppins",
-                      }}
-                    >
-                      {header}
-                    </Typography>
-                  );
-                })}
-              </Box>
-            </Box>
-          </Box>
-        </Box> */}
+        <div style={{position:"relative",top:"3rem"}}>
+        <div style={{position:"relative", right:"10rem", color:"white"}}>HOME</div>
+        <span style={{position:"relative", right:"10rem", color:"white"}}>About</span>
+        <span style={{position:"relative", color:"white", right:"3rem"}}>Contact us</span><br></br>
+        <span style={{position:"relative", right:"10rem",  color:"white"}}>Services</span>
+        <span style={{position:"relative", right:"4rem", color:"white"}}>FAQs</span>
+        <div style={{position:"relative", right:"10rem", color:"white"}}>Projects</div>
+        </div>
       </Container>
     </div>
   );
